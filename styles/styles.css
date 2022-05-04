@@ -10,6 +10,7 @@
     --secondary-bcg-color: #F7F7F7;
     --text-price-contacts-color:#9DA4BD;
 }
+/*..................................................Общее .............................................*/
 body{
     font-style: normal;
     font-weight: 400;
@@ -17,7 +18,7 @@ body{
     background-color: var(--primary-bcg-color);
     color: var(--primary-text-color);
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.67;
     letter-spacing: 0.02em;
 }
 h1,
@@ -57,7 +58,7 @@ address {
 .flex {
     display: flex;
 }
-/* .................................................Header */
+/* .................................................Header ...................*/
 .logo {
     margin-right: 71.07px;
     padding-top: 32px;
@@ -73,23 +74,9 @@ address {
     letter-spacing: 0.1em;
     color: var(--accent-secondary-text-color);
 }
-.header-phone{
-    text-transform: uppercase;
-}
 .header-phone:hover,
 .header-phone:focus {
     color: var(--accent-text-color);
-}
-.header-group {
-    padding-top: 52px;
-    margin-left: auto;
-} 
-.btn-mode-dark{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
 }
 .site-nav .item:not(:last-child) {
 margin-right: 40px;
@@ -97,6 +84,11 @@ margin-right: 40px;
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-text-color);
+}
+/* .............................................Контакти................................ */
+.header-group {
+    padding-top: 52px;
+    margin-left: auto;
 }
 .header-group .header-phone:not(:last-child) {
     margin-right: 40px;
@@ -107,6 +99,9 @@ margin-right: 40px;
     justify-content: center;
     align-items: center;
 }
+.header-phone {
+    text-transform: uppercase;
+}
 .btn {
     padding: 12px 22px;
     border: 1px solid #FF6C00;
@@ -114,15 +109,14 @@ margin-right: 40px;
     color: var(--secondary-text-color);
     background-color: transparent;
 }
-
-/* .overlay {
-    width: 1125px;
-    height: 680px;
-    background-image: url(../photos/hero-overlay.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; 
-} */
+.btn-mode-dark {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+/* .................................................Hero........................................ */
 .hero-group .uppertitle {
     font-size: 11px;
     line-height: 1.36;
@@ -138,8 +132,6 @@ margin-right: 40px;
     color: var(--accent-secondary-text-color);
 }
 .hero-group .subtitle {
-    font-weight: 400;
-    letter-spacing: 0.02em;
     color: var(--text-price-contacts-color);
 }
 .hero-socials-container .list {
@@ -147,7 +139,6 @@ margin-right: 40px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.37;
-    letter-spacing: 0.2em;
     color: #303030;
 }
 .hero-socials-container .link:hover,
@@ -163,11 +154,113 @@ margin-right: 40px;
     color: var(--accent-secondary-text-color);
     background-color: transparent;
 }
-
 .slider-btn-disable{
     display: block;
     border: none;
     padding: 0;
-    
+}
+/* .................................................ABOUT......................................... */
+.about-group .uppertitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.about-group .section-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+}
+.about-group .subtitle {
+    color: var(--thirth-text-color);
+}
+.about-group .description {
+    font-size: 14px;
+    line-height: 1.86;
+    color: var(--thirth-text-color);
+}
+/* ..............................................Price....................................... */
+.price .uppertitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;   
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6)
+}
+.price .section-title{
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: var(--accent-secondary-text-color);
+}
+.inner-list .inner-item{
+color: var(--text-price-contacts-color);
+}
+/* .....................................................BENEFITS................................................ */
+.list .benefits-amount {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
 
+}
+.list .benefits-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    text-align: center;
+}
+.benefits-group .uppertitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.benefits-group .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+}
+.benefits-group .subtitle {
+    color: var(--thirth-text-color);
+}
+/* ...........................................TEAM................................... */
+.team .uppertitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.team .section-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+}
+.member-list .member-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+}
+.member-list .member-position {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color:var(--accent-text-color)
+}
+/* .............................................GALLERY......................................... */
+.gallery .uppertitle{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
