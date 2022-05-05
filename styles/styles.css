@@ -52,11 +52,17 @@ address {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid orangered;
+    /* outline: 2px solid orangered; */
     background-color: rgba(13, 13, 16, 0.2);
 }
 .flex {
     display: flex;
+}
+.overlay {
+    width: 1125px;
+    height: 680px;
+    background-image: url(../photos/hero-overlay.png);
+    background-repeat: no-repeat;
 }
 /* .................................................Header ...................*/
 .logo {
@@ -64,7 +70,11 @@ address {
     padding-top: 32px;
 }
 .site-nav{
-    padding-top: 52px;
+    padding-top: 40px;
+}
+.site-nav .item {
+    padding-top: 12px;
+    padding-bottom: 20px;
 }
 .site-nav,
 .header-phone {
@@ -73,6 +83,11 @@ address {
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--accent-secondary-text-color);
+}
+
+.header-list {
+    justify-content: center;
+    align-items: center;
 }
 .header-phone:hover,
 .header-phone:focus {
@@ -87,17 +102,11 @@ margin-right: 40px;
 }
 /* .............................................Контакти................................ */
 .header-group {
-    padding-top: 52px;
+    padding-top: 40px;
     margin-left: auto;
 }
-.header-group .header-phone:not(:last-child) {
+.header-list .item:not(:last-child) {
     margin-right: 40px;
-}
-.header-group,
-.navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .header-phone {
     text-transform: uppercase;
@@ -117,13 +126,19 @@ margin-right: 40px;
     text-transform: uppercase;
 }
 /* .................................................Hero........................................ */
+.hero-group {
+    text-align: center;
+}
 .hero-group .uppertitle {
+    margin-bottom: 20px;
+    padding-top: 184px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 72px;
     line-height: 1.18;
@@ -131,6 +146,7 @@ margin-right: 40px;
     color: var(--accent-secondary-text-color);
 }
 .hero-group .subtitle {
+    padding-bottom: 206px;
     font-size: 18px;
     line-height: 1.67;
     color: var(--text-price-contacts-color);
@@ -257,3 +273,5 @@ color: var(--text-price-contacts-color);
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+
+
