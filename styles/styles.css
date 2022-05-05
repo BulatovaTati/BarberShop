@@ -17,8 +17,8 @@ body{
     font-family: "Open Sans", sans-serif;
     background-color: var(--primary-bcg-color);
     color: var(--primary-text-color);
-    font-size: 18px;
-    line-height: 1.67;
+    font-size: 11px;
+    line-height: 1.37;
     letter-spacing: 0.02em;
 }
 h1,
@@ -118,7 +118,6 @@ margin-right: 40px;
 }
 /* .................................................Hero........................................ */
 .hero-group .uppertitle {
-    font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -132,13 +131,13 @@ margin-right: 40px;
     color: var(--accent-secondary-text-color);
 }
 .hero-group .subtitle {
+    font-size: 18px;
+    line-height: 1.67;
     color: var(--text-price-contacts-color);
 }
 .hero-socials-container .list {
     display: flex;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
     color: #303030;
 }
 .hero-socials-container .link:hover,
@@ -147,8 +146,6 @@ margin-right: 40px;
 }
 .slider-btn{
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
     text-align: right;
     letter-spacing: 0.1em;
     color: var(--accent-secondary-text-color);
@@ -162,8 +159,6 @@ margin-right: 40px;
 /* .................................................ABOUT......................................... */
 .about-group .uppertitle {
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -174,6 +169,8 @@ margin-right: 40px;
     letter-spacing: 0.05em;
 }
 .about-group .subtitle {
+    font-size: 18px;
+    line-height: 1.67;
     color: var(--thirth-text-color);
 }
 .about-group .description {
@@ -183,9 +180,7 @@ margin-right: 40px;
 }
 /* ..............................................Price....................................... */
 .price .uppertitle {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;   
+    font-weight: 600;   
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6)
@@ -197,6 +192,8 @@ margin-right: 40px;
     color: var(--accent-secondary-text-color);
 }
 .inner-list .inner-item{
+    font-size: 18px;
+    line-height: 1.67;
 color: var(--text-price-contacts-color);
 }
 /* .....................................................BENEFITS................................................ */
@@ -216,8 +213,6 @@ color: var(--text-price-contacts-color);
 }
 .benefits-group .uppertitle {
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -228,13 +223,13 @@ color: var(--text-price-contacts-color);
     letter-spacing: 0.05em;
 }
 .benefits-group .subtitle {
+    font-size: 18px;
+    line-height: 1.67;
     color: var(--thirth-text-color);
 }
 /* ...........................................TEAM................................... */
 .team .uppertitle {
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -259,8 +254,6 @@ color: var(--text-price-contacts-color);
 /* .............................................GALLERY......................................... */
 .gallery .uppertitle{
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
