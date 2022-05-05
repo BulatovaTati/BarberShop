@@ -54,35 +54,25 @@ address {
     padding-right: 15px;
     /* outline: 2px solid orangered; */
     background-color: rgba(13, 13, 16, 0.2);
+    outline: 2px solid orangered
 }
 .flex {
     display: flex;
 }
 /* .................................................Header ...................*/
 .logo {
-    margin-right: 71.07px;
+    margin-right: 71px;
     padding-top: 32px;
-}
-.site-nav{
-    padding-top: 40px;
-}
-.site-nav .item {
-    padding-top: 12px;
-    padding-bottom: 20px;
-}
-.site-nav,
-.header-phone {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    color: var(--accent-secondary-text-color);
-}
-
-.header-list {
-    justify-content: center;
     align-items: center;
 }
+.navigation-link {
+    display: inline-block;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    outline: 1px solid yellow;
+}
+
+
 .header-phone:hover,
 .header-phone:focus {
     color: var(--accent-text-color);
@@ -90,8 +80,8 @@ address {
 .site-nav .item:not(:last-child) {
 margin-right: 40px;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.navigation-link:hover,
+.navigation-link:focus {
     color: var(--accent-text-color);
 }
 /* .............................................Контакти................................ */
@@ -121,11 +111,11 @@ margin-right: 40px;
 }
 /* .................................................Hero........................................ */
 .hero-group {
-    text-align: center;
+    width: 476x;
 }
 .hero-group .uppertitle {
-    margin-bottom: 20px;
-    padding-top: 184px;
+ margin-bottom: 20px;
+    /* padding-top: 184px;  */
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -140,7 +130,7 @@ margin-right: 40px;
     color: var(--accent-secondary-text-color);
 }
 .hero-group .subtitle {
-    padding-bottom: 206px;
+    /* padding-bottom: 206px; */
     font-size: 18px;
     line-height: 1.67;
     color: var(--text-price-contacts-color);
