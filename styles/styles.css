@@ -58,12 +58,6 @@ address {
 .flex {
     display: flex;
 }
-.overlay {
-    width: 1125px;
-    height: 680px;
-    background-image: url(../photos/hero-overlay.png);
-    background-repeat: no-repeat;
-}
 /* .................................................Header ...................*/
 .logo {
     margin-right: 71.07px;
