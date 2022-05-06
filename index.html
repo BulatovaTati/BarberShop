@@ -18,14 +18,14 @@
         <a class="logo" href="./index.html" aria-label="Логотип сайту BarberShop"><img src="./photos/logo.svg" alt="Логотип" width="69.93" height="56.46"></a>
  <!-- Навігація по сторінці -->
          <nav class="navigation">
-             <ul class="site-nav list flex">
-                <li class="item">
+             <ul class="navigation-list list flex">
+                <li class="navigation-item"">
                     <a class="link navigation-link" href="">О нас</a></li>
-                <li class="item">
+                <li class="navigation-item"">
                     <a class="link navigation-link" href="">Услуги и цены</a></li>
-                <li class="item">
+                <li class="navigation-item"">
                     <a class="link navigation-link" href="">Мастера</a></li>
-                <li class="item">
+                <li class="navigation-item"">
                     <a class="link navigation-link" href="">Контакты</a></li>
              </ul>
          </nav>      
@@ -37,9 +37,10 @@
                     <button class="btn btn-mode-dark" type="button">онлайн-запись</button>
             </div>
      </header>
+     <!-- ...................................Уникальный контент сайта -->
      <main>
-         <!-- Барбершоп -->
-        <section class="hero  ">
+         <!-- ................................Барбершоп hero-->
+        <section class="hero">
             <div class="container">
                 <div class="hero-socials-container">
             <ul class="list">
@@ -64,36 +65,39 @@
             </ul>
             <div class="hero-group">
                 <p class="uppertitle" lang="en">A hair salon for men in Kyiv</p>
-                <h1 class="hero-title" lang="en">BarberShop</h1>
-                <p class="subtitle" lang="en">We are experts in trendy men's haircuts.
-                We work quickly, carefully, and tastefully.</p>
+                <h1 class="main-title" lang="en">BarberShop</h1>
+                <p class="subtitle" lang="en">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
             </div>
             <ul class="list">
                 <li class="item"> 
-                    <button type="button" 
-                    class="slider-btn slider-btn-disable">Назад</button></li>
+                    <button class="slider-btn slider-btn-disable" type="button">Назад</button>
+                </li>
                 <li class="item"> 
-                    <button type="button" 
-                    class="slider-btn">Вперед</button></li>
+                    <button class="slider-btn" type="button">Вперед</button>
+                </li>
             </ul>
              </div>
         </section>
-            <!-- О НАС -->
-        <section class="about">
-            <div class="container">
+            <!-- section О НАС -->
+        <section class="about section">
+            <div class="container about-container">
                 <ul class="list">
                     <li class="item">
-                        <img src="./photos/about/beard.jpg" 
+                        <img 
                         class="about-img" 
+                        src="./photos/about/beard.jpg" 
                         alt="Бритье бороды" 
                         width="270" 
-                        height="445"></li>
+                        height="445"/>
+                    </li>
                     <li class="item">
-                        <img src="./photos/about/back of the head.jpg" 
+                        <img 
                         class="about-img" 
+                        src="./photos/about/back of the head.jpg" 
                         alt="Бритье опасной бритвой" 
                         width="270" 
-                        height="445"></li>
+                        height="445"/>
+                    </li>
                 </ul>
                 <div class="about-group">
                     <p class="uppertitle">О НАС</p>
@@ -103,18 +107,18 @@
                     и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                     то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
                     готовы усовершенствовать каждого, кто к нам приходит!</p>
-                    <button class="btn" type="button">онлайн-запись</button>
+                    <button class="btn btn-mode-light" type="button">онлайн-запись</button>
                 </div>
                 </div>
         </section>
         <!-- Цены -->
-        <section class="price">
+        <section class="price section">
             <div class="container">
             <p class="uppertitle">Проведи время в компании лучших мастеров</p>
             <h2 class="section-title">Услуги и цены</h2>
             <ul class="list">
                 <li class="item">
-                    <ul class="list inner-list">
+                    <ul class="inner-list list">
                         <li class="inner-item">Мужская стрижка <span>от 300 грн.</span></li>
                         <li class="inner-item">Стрижка бороды <span>от 200 грн.</span></li>
                         <li class="inner-item">Стрижка усов <span>от 200 грн.</span></li>
@@ -122,7 +126,7 @@
                     </ul>
                 </li>
                 <li class="item">
-                    <ul class="list inner-list">
+                    <ul class="inner-list list">
                         <li class="inner-item">Cтрижка у стажера <span>от 50 грн.</span></li>
                         <li class="inner-item">Стрижка под насадку <span>от 200 грн.</span></li>
                         <li class="inner-item">Детская стрижка (до 12 лет) <span>от 300 грн.</span></li>
@@ -130,11 +134,11 @@
                     </ul>
                 </li>
             </ul>
-            <button class="btn" type="button">онлайн-запись</button>
+            <button class="btn btn-mode-dark" type="button">онлайн-запись</button>
             </div>
         </section>
-        <!-- Почему мы-->
-        <section class="benefits">
+        <!-- section Почему мы-->
+        <section class="benefits section">
             <div class="container">
             <ul class="list">
             <li class="item">
@@ -162,17 +166,22 @@
                 </div>
         </section>
         <!-- Команда -->
-        <section class="team">
+        <section class="team section">
             <div class="container">
             <p class="uppertitle">для настоящих ценителей атмосферы</p>
             <h2 class="section-title">Наши мастера</h2>
-            <ul class="list member-list">
+            <ul class="member-list list">
                 <li class="member-item">
-                    <img class="member-img" src="./photos/team/JohnSmith.jpg" alt="John Smith" width="370" height="346">
+                    <img 
+                    class="member-img" 
+                    src="./photos/team/JohnSmith.jpg" 
+                    alt="John Smith" 
+                    width="370" 
+                    height="346">
                 <div class="member-group">
                     <h3 class="member-title">John Smith</h3>
                     <p class="member-position" lang="en">Extreme Barber</p>
-                    <ul class="list socials">
+                    <ul class="socials list">
                         <li class="socials-item">
                             <a class="socials-link" 
                             href="https://www.instagram.com/" 
@@ -204,11 +213,17 @@
                     </ul>
                 </div>
                 </li>
-                <li class="member-item"> <img class="member-img" src="./photos/team/MicheleDoe.jpg" alt="Michele Doe" width="370" height="346">
+                <li class="member-item"> 
+                    <img 
+                    class="member-img" 
+                    src="./photos/team/MicheleDoe.jpg" 
+                    alt="Michele Doe" 
+                    width="370" 
+                    height="346">
                 <div class="member-group">
                     <h3 class="member-title">Michele Doe</h3>
                     <p class="member-position" lang="en">Extreme Barber</p>
-                    <ul class="list socials">
+                    <ul class="socials list">
                         <li class="socials-item">
                                 <a class="socials-link" 
                                 href="https://www.instagram.com/" 
@@ -244,7 +259,7 @@
                 <div class="member-group">
                     <h3 class="member-title">Alan Black</h3>
                     <p class="member-position" lang="en">Extreme Barber</p>
-                    <ul class="list socials">
+                    <ul class="socials list">
                         <li class="socials-item">
                             <a class="socials-link" 
                             href="https://www.instagram.com/" 
@@ -280,41 +295,46 @@
             </div>
         </section>
         <!-- Примеры -->
-        <section class="gallery">
+        <section class="gallery section">
             <div class="container">
             <p class="uppertitle">На латинском языке “барба” означает “борода”</p>
             <h2 class="section-title" hidden>Галерея работ</h2>
             <ul class="list">
                 <li class="item">
-                    <img class="gallery-img" src="./photos/gallery/example1.jpg" alt="Стрижка" width="270" height="360">
+                    <img class="gallery-img"
+                    src="./photos/gallery/example1.jpg" alt="Стрижка" width="270" height="360">
                 </li>
                 <li class="item">
-                    <img class="gallery-img"src="./photos/gallery/example2.jpg" alt="Бритье"  width="270" height="360">
+                    <img class="gallery-img"
+                    src="./photos/gallery/example2.jpg" alt="Бритье"  width="270" height="360">
                 </li>
                 <li class="item">
-                    <img class="gallery-img"src="./photos/gallery/example3.jpg" alt="Распаривание"  width="270" height="360">
+                    <img class="gallery-img"
+                    src="./photos/gallery/example3.jpg" alt="Распаривание"  width="270" height="360">
                 </li>
                 <li class="item">
-                    <img class="gallery-img" src="./photos/gallery/example4.jpg" alt="Окантовка" width="270" height="360">
+                    <img class="gallery-img"
+                    src="./photos/gallery/example4.jpg" alt="Окантовка" width="270" height="360">
                 </li>
             </ul>
             </div>
         </section>
      </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
         <p class="copiright">&#169; Copyright 2020</p>
         <ul class="list">
             <li class="item">
-                <a class="link" href="https://www.instagram.com/" target="blank" rel="noopener noreferrer">Instagram</a>
+                <a class="link" 
+                href="https://www.instagram.com/" target="blank" rel="noopener noreferrer">Instagram</a>
             </li>
             <li class="item">
-             <a class="link" href="https://www.youtube.com/" target="blank" rel="noopener noreferrer">Youtube</a>
+             <a class="link" 
+             href="https://www.youtube.com/" target="blank" rel="noopener noreferrer">Youtube</a>
             </li">
         </ul>
        </div>
     </footer>
-    
  </body>
  </html> 
  
