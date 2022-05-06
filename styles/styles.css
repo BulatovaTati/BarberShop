@@ -1,261 +1,257 @@
 :root {
-    /* .....................................Text-Color */
-    --primary-text-color: #303030;
-    --secondary-text-color: #FFFFFF;
-    --thirth-text-color:#555555;
-    --accent-text-color: #FF6C00;
-    --accent-secondary-text-color: #FFFFFF;
-    /* ........................................BCG */
-    --primary-bcg-color: #FFFFFF;
-    --secondary-bcg-color: #F7F7F7;
-    --text-price-contacts-color:#9DA4BD;
+  /* .....................................Text-Color */
+  --primary-text-color: #303030;
+  --secondary-text-color: #ffffff;
+  --thirth-text-color: #555555;
+  --accent-text-color: #ff6c00;
+  --accent-secondary-text-color: #ffffff;
+  /* ........................................BCG */
+  --primary-bcg-color: #ffffff;
+  --secondary-bcg-color: #f7f7f7;
+  --text-price-contacts-color: #9da4bd;
 }
 /*..................................................Общее .............................................*/
-body{
-    font-style: normal;
-    font-weight: 400;
-    font-family: "Open Sans", sans-serif;
-    background-color: var(--primary-bcg-color);
-    color: var(--primary-text-color);
-    font-size: 11px;
-    line-height: 1.37;
-    letter-spacing: 0.02em;
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--primary-bcg-color);
+  color: var(--primary-text-color);
+  font-size: 11px;
+  line-height: 1.37;
+  letter-spacing: 0.02em;
 }
 h1,
 h2,
 h3,
 h4,
 p {
-    margin: 0;
+  margin: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 address {
-    font-style: normal;
+  font-style: normal;
 }
 .link,
 .socials-link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 2px solid orangered; */
-    background-color: rgba(13, 13, 16, 0.2);
-    outline: 2px solid orangered
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid orangered; */
+  background-color: rgba(13, 13, 16, 0.2);
+  outline: 2px solid orangered;
 }
 .flex {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 /* .................................................Header ...................*/
 .logo {
-    margin-right: 71px;
-    padding-top: 32px;
-    align-items: center;
+  margin-right: 71px;
+  padding-top: 32px;
+  align-items: center;
 }
 .navigation-link {
-    display: inline-block;
-    padding-top: 52px;
-    padding-bottom: 52px;
-    outline: 1px solid yellow;
+  display: inline-block;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  outline: 1px solid yellow;
 }
-
 
 .header-phone:hover,
 .header-phone:focus {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
-.site-nav .item:not(:last-child) {
-margin-right: 40px;
+.navigation-list .navigation-item:not(:last-child) {
+  margin-right: 40px;
 }
 .navigation-link:hover,
 .navigation-link:focus {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 /* .............................................Контакти................................ */
 .header-group {
-    padding-top: 40px;
-    margin-left: auto;
+  margin-left: auto;
 }
 .header-list .item:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 .header-phone {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .btn {
-    padding: 12px 22px;
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
-    color: var(--secondary-text-color);
-    background-color: transparent;
+  padding: 12px 22px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  color: var(--secondary-text-color);
+  background-color: transparent;
 }
 .btn-mode-dark {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 /* .................................................Hero........................................ */
 .hero-group {
-    width: 476x;
+  width: 476x;
 }
 .hero-group .uppertitle {
- margin-bottom: 20px;
-    /* padding-top: 184px;  */
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+  /* padding-top: 184px;  */
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
 }
-.hero-title {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
-    color: var(--accent-secondary-text-color);
+.main-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--accent-secondary-text-color);
 }
 .hero-group .subtitle {
-    /* padding-bottom: 206px; */
-    font-size: 18px;
-    line-height: 1.67;
-    color: var(--text-price-contacts-color);
+  /* padding-bottom: 206px; */
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-price-contacts-color);
 }
 .hero-socials-container .list {
-    display: flex;
-    font-weight: 600;
-    color: #303030;
+  display: flex;
+  font-weight: 600;
+  color: #303030;
 }
 .hero-socials-container .link:hover,
 .hero-socials-container .link:focus {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
-.slider-btn{
-    font-weight: 600;
-    text-align: right;
-    letter-spacing: 0.1em;
-    color: var(--accent-secondary-text-color);
-    background-color: transparent;
+.slider-btn {
+  font-weight: 600;
+  text-align: right;
+  letter-spacing: 0.1em;
+  color: var(--accent-secondary-text-color);
+  background-color: transparent;
 }
-.slider-btn-disable{
-    display: block;
-    border: none;
-    padding: 0;
+.slider-btn-disable {
+  display: block;
+  border: none;
+  padding: 0;
 }
 /* .................................................ABOUT......................................... */
 .about-group .uppertitle {
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .about-group .section-title {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: 0.05em;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
 }
 .about-group .subtitle {
-    font-size: 18px;
-    line-height: 1.67;
-    color: var(--thirth-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--thirth-text-color);
 }
 .about-group .description {
-    font-size: 14px;
-    line-height: 1.86;
-    color: var(--thirth-text-color);
+  font-size: 14px;
+  line-height: 1.86;
+  color: var(--thirth-text-color);
 }
 /* ..............................................Price....................................... */
 .price .uppertitle {
-    font-weight: 600;   
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6)
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
 }
-.price .section-title{
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: 0.05em;
-    color: var(--accent-secondary-text-color);
+.price .section-title {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  color: var(--accent-secondary-text-color);
 }
-.inner-list .inner-item{
-    font-size: 18px;
-    line-height: 1.67;
-color: var(--text-price-contacts-color);
+.inner-list .inner-item {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-price-contacts-color);
 }
 /* .....................................................BENEFITS................................................ */
 .list .benefits-amount {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.05em;
-
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 .list .benefits-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
-    text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  text-align: center;
 }
 .benefits-group .uppertitle {
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .benefits-group .section-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: 0.05em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
 }
 .benefits-group .subtitle {
-    font-size: 18px;
-    line-height: 1.67;
-    color: var(--thirth-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--thirth-text-color);
 }
 /* ...........................................TEAM................................... */
 .team .uppertitle {
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .team .section-title {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: 0.05em;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
 }
 .member-list .member-title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.39;
-    text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
 }
 .member-list .member-position {
-    font-size: 14px;
-    line-height: 1.36;
-    text-align: center;
-    color:var(--accent-text-color)
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--accent-text-color);
 }
 /* .............................................GALLERY......................................... */
-.gallery .uppertitle{
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+.gallery .uppertitle {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
-
-
