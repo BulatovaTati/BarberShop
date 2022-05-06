@@ -1,4 +1,7 @@
 :root {
+  /* .................................................FONT */
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   /* .....................................Text-Color */
   --primary-text-color: #303030;
   --secondary-text-color: #ffffff;
@@ -13,18 +16,21 @@
 /*..................................................Общее .............................................*/
 body {
   font-style: normal;
+  font-family: var(--main-font);
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  background-color: var(--primary-bcg-color);
-  color: var(--primary-text-color);
   font-size: 11px;
   line-height: 1.37;
   letter-spacing: 0.02em;
+
+  background-color: var(--primary-bcg-color);
+  color: var(--primary-text-color);
 }
 h1,
 h2,
 h3,
 h4,
+h4,
+h6,
 p {
   margin: 0;
 }
@@ -33,28 +39,46 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 address {
   font-style: normal;
 }
 .link,
 .socials-link {
   text-decoration: none;
-  color: inherit;
+  color: currentColor;
 }
 .list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
 }
 .container {
   width: 1200px;
+
   margin-left: auto;
   margin-right: auto;
+
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid orangered; */
-  background-color: rgba(13, 13, 16, 0.2);
+  background-color: #191c26;
+
   outline: 2px solid orangered;
+}
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .flex {
   display: flex;
@@ -63,73 +87,149 @@ address {
 /* .................................................Header ...................*/
 .logo {
   margin-right: 71px;
-  padding-top: 32px;
-  align-items: center;
 }
-.navigation-link {
-  display: inline-block;
-  padding-top: 52px;
-  padding-bottom: 52px;
-  outline: 1px solid yellow;
-}
-
-.header-phone:hover,
-.header-phone:focus {
-  color: var(--accent-text-color);
-}
-.navigation-list .navigation-item:not(:last-child) {
+.navigation-item {
   margin-right: 40px;
 }
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+.navigation-link {
+  color: var(--secondary-text-color);
+}
+
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-text-color);
 }
+
 /* .............................................Контакти................................ */
 .header-group {
   margin-left: auto;
 }
-.header-list .item:not(:last-child) {
-  margin-right: 40px;
-}
+.navigation-link,
 .header-phone {
+  display: block;
+
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  font-weight: 600;
+  font-size: 12px;
+
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-text-color);
+}
+
+.header-phone {
+  margin-right: 40px;
   text-transform: uppercase;
 }
-.btn {
-  padding: 12px 22px;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  color: var(--secondary-text-color);
-  background-color: transparent;
+.header-phone:hover,
+.header-phone:focus {
+  color: var(--accent-text-color);
 }
-.btn-mode-dark {
+
+/* ......................................................ALL BUTTON */
+.btn {
+  padding: 12px 20px;
+  max-width: 200px;
+  min-width: 160px;
+  min-height: 40px;
+
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  border: 1px solid var(--accent-text-color);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
 }
+
+.btn:hover,
+.btn:focus {
+  color: var(--accent-secondary-text-color);
+  background-color: var(--accent-text-color);
+}
+
+.btn-mode-light {
+  color: var(--primary-text-color);
+}
+
+.btn-mode-dark {
+  color: var(--accent-secondary-text-color);
+}
+
+.slider-btn {
+  width: 60px;
+  height: 24px;
+  padding: 0;
+
+  font-weight: 600;
+  text-align: right;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-text-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--accent-secondary-text-color);
+  cursor: pointer;
+}
+
+.slider-btn-disable {
+  text-align: left;
+
+  color: rgba(157, 164, 189, 0.6);
+  border-color: rgba(157, 164, 189, 0.6);
+}
+
 /* .................................................Hero........................................ */
 .hero-group {
-  width: 476x;
+  width: 476px;
 }
 .hero-group .uppertitle {
   margin-bottom: 20px;
-  /* padding-top: 184px;  */
+  font-weight: 600;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
   color: rgba(157, 164, 189, 0.6);
 }
-.main-title {
+.hero .item {
+  margin-right: 40px;
+}
+.hero .item:last-child {
+  margin-right: 0;
+}
+.hero .link {
+  font-weight: 600;
+  color: var(--primary-text-color);
+}
+.hero .link:hover,
+.hero .link:focus {
+  color: var(--accent-text-color);
+}
+.hero .main-title {
   margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+
   color: var(--accent-secondary-text-color);
 }
 .hero-group .subtitle {
-  /* padding-bottom: 206px; */
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-price-contacts-color);
@@ -139,40 +239,44 @@ address {
   font-weight: 600;
   color: #303030;
 }
-.hero-socials-container .link:hover,
-.hero-socials-container .link:focus {
-  color: var(--accent-text-color);
-}
-.slider-btn {
-  font-weight: 600;
-  text-align: right;
-  letter-spacing: 0.1em;
-  color: var(--accent-secondary-text-color);
-  background-color: transparent;
-}
-.slider-btn-disable {
-  display: block;
-  border: none;
-  padding: 0;
-}
+
 /* .................................................ABOUT......................................... */
-.about-group .uppertitle {
+.about .list {
+  margin-right: 64px;
+}
+.about .item {
+  margin-right: 30px;
+}
+.about .item:last-child {
+  margin-right: 0;
+}
+
+.about-group {
+  width: 500px;
+}
+.about .uppertitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.about-group .section-title {
-  font-family: "Raleway";
+.about .section-title {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
 }
-.about-group .subtitle {
+.about .subtitle {
+  margin-bottom: 20px;
+
   font-size: 18px;
   line-height: 1.67;
   color: var(--thirth-text-color);
 }
-.about-group .description {
+.about .description {
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.86;
   color: var(--thirth-text-color);
@@ -190,37 +294,43 @@ address {
   letter-spacing: 0.05em;
   color: var(--accent-secondary-text-color);
 }
-.inner-list .inner-item {
+.price .inner-list {
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-price-contacts-color);
 }
 /* .....................................................BENEFITS................................................ */
-.list .benefits-amount {
+.benefits-amount {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
 }
-.list .benefits-text {
+.benefits-amount-decor {
   font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+
+  color: var(--accent-text-color);
+}
+.benefits-text {
+  font-weight: 600;
   text-align: center;
 }
-.benefits-group .uppertitle {
+.benefits .uppertitle {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.benefits-group .section-title {
+.benefits .section-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
 }
-.benefits-group .subtitle {
+.benefits .subtitle {
   font-size: 18px;
   line-height: 1.67;
   color: var(--thirth-text-color);
@@ -235,15 +345,16 @@ address {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 42px;
+  line-height: 1.16;
   letter-spacing: 0.05em;
 }
-.member-list .member-title {
+.member-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
 }
-.member-list .member-position {
+.member-position {
   font-size: 14px;
   line-height: 1.36;
   text-align: center;
@@ -254,4 +365,28 @@ address {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.gallery .section-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+/* .........................................Footer section */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .copyright {
+  font-weight: 600;
+  color: var(--text-price-contacts-color);
+}
+.footer .link {
+  font-weight: 600;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-text-color);
 }
