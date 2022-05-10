@@ -85,7 +85,7 @@ address {
 
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color: #191c26; */
+  background-color: #191c26;
 
   outline: 2px solid orangered;
 }
@@ -428,7 +428,6 @@ address {
 /* contacts */
 .contacts {
   height: 644px;
-  background-color: var(--secondary-bcg-color);
   background-image: url(../photos/contacts-Bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
