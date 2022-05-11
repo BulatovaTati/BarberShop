@@ -379,7 +379,24 @@ address {
   text-align: center;
 }
 /* .....................................................BENEFITS................................................ */
+.benefits-container {
+  display: flex;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+  margin-right: 130px;
+}
+.benefits-list .item {
+  padding: 20px 24px;
+  max-width: 185px;
+  height: 133px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
 .benefits-amount {
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -397,6 +414,24 @@ address {
 .benefits-text {
   font-weight: 600;
   text-align: center;
+}
+.benefits-group {
+  width: 500px;
+}
+.benefits-group .uppertitle {
+  margin-bottom: 20px;
+}
+.benefits-group .section-title {
+  margin-bottom: 20px;
+}
+.benefits-group .uppertitle::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+
+  background-color: var(--primary-text-color);
 }
 .benefits .uppertitle {
   font-weight: 600;
