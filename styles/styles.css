@@ -406,33 +406,32 @@ address {
 .benefits-group {
   width: 500px;
 }
-.benefits-group .uppertitle {
-  margin-bottom: 20px;
-}
-.benefits-group .section-title {
-  margin-bottom: 20px;
-}
 .benefits-group .uppertitle::before {
   content: "";
   display: inline-block;
+
   margin-right: 20px;
   width: 60px;
   height: 1px;
 
   background-color: var(--primary-text-color);
 }
-.benefits .uppertitle {
+.benefits-group .uppertitle {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.benefits .section-title {
+.benefits-group .section-title {
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
 }
-.benefits .subtitle {
+.benefits-group .subtitle {
   font-size: 18px;
   line-height: 1.67;
   color: var(--thirth-text-color);
