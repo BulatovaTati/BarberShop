@@ -12,6 +12,7 @@
   --primary-bcg-color: #ffffff;
   --secondary-bcg-color: #f7f7f7;
   --text-price-contacts-color: #9da4bd;
+  --dark-bcg: #191c26;
 
   /* ...................................grid items */
   --items: 1;
@@ -72,10 +73,12 @@ address {
 .grid {
   display: flex;
   flex-wrap: wrap;
+
   gap: var(--indent);
 }
+
 .grid-item {
-  flex-basis: calc(100% - var(--indent) * (var(--items) -1) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .container {
   width: 1200px;
@@ -85,9 +88,8 @@ address {
 
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #191c26;
 
-  outline: 2px solid orangered;
+  /* outline: 2px solid orangered; */
 }
 .section {
   padding-top: 130px;
@@ -98,8 +100,23 @@ address {
   align-items: center;
 }
 /* .................................................Header ...................*/
+.header,
+.hero {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(25, 28, 38, 0.2);
+}
 .logo {
   margin-right: 71px;
+}
+.logo::after {
+  content: "";
+  margin-top: 22px;
+  display: block;
+  width: 100px;
+  height: 10px;
+  background-color: #c4c4c4;
 }
 .navigation-item {
   margin-right: 40px;
@@ -309,6 +326,7 @@ address {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url(../photos/price-overlay.jpg);
 
@@ -316,22 +334,49 @@ address {
   background-position: center;
   background-size: cover;
 }
+.price-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+.price-list .item {
+  padding: 30px 40px;
+  width: 585px;
+  height: 240px;
+  outline: 2px solid #ff6c00;
+}
 .price .uppertitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
+.price .uppertitle::before {
+  content: "";
+  margin-right: 20px;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+}
 .price .section-title {
+  margin-bottom: 44px;
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
   color: var(--accent-secondary-text-color);
 }
-.price .inner-list {
+.inner-list {
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-price-contacts-color);
+}
+.inner-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.button-container {
+  text-align: center;
 }
 /* .....................................................BENEFITS................................................ */
 .benefits-amount {
@@ -370,6 +415,12 @@ address {
   color: var(--thirth-text-color);
 }
 /* ...........................................TEAM................................... */
+.team {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-bcg-color);
+}
 .team .uppertitle {
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -413,25 +464,22 @@ address {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  /* gap: 30px; */
-  /* margin-right: -30px; */
 }
 .gallery .item {
-  /* margin-right: 30px; */
   margin: 15px;
   flex-basis: calc((100% - 120px) / 4);
 }
-/* .gallery .item:last-child {
-  margin-right: 0;
-} */
 
 /* contacts */
 .contacts {
+  max-width: 1280px;
   height: 644px;
+  margin: 0 auto;
+  background-color: var(--dark-bcg);
   background-image: url(../photos/contacts-Bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: calc(100% -312px);
+  background-position: top left calc(50% + 325px);
 }
 /* .........................................Footer section */
 .footer {
