@@ -76,7 +76,6 @@ address {
 
   gap: var(--indent);
 }
-
 .grid-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
@@ -121,15 +120,12 @@ address {
 .navigation-item {
   margin-right: 40px;
 }
-
 .navigation-item:last-child {
   margin-right: 0;
 }
-
 .navigation-link {
   color: var(--secondary-text-color);
 }
-
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-text-color);
@@ -154,7 +150,6 @@ address {
 
   color: var(--secondary-text-color);
 }
-
 .header-phone {
   margin-right: 40px;
   text-transform: uppercase;
@@ -183,21 +178,17 @@ address {
   background-color: transparent;
   cursor: pointer;
 }
-
 .btn:hover,
 .btn:focus {
   color: var(--accent-secondary-text-color);
   background-color: var(--accent-text-color);
 }
-
 .btn-mode-light {
   color: var(--primary-text-color);
 }
-
 .btn-mode-dark {
   color: var(--accent-secondary-text-color);
 }
-
 .slider-btn {
   width: 60px;
   height: 24px;
@@ -213,14 +204,12 @@ address {
   border-bottom: 1px solid var(--accent-secondary-text-color);
   cursor: pointer;
 }
-
 .slider-btn-disable {
   text-align: left;
 
   color: rgba(157, 164, 189, 0.6);
   border-color: rgba(157, 164, 189, 0.6);
 }
-
 /* .................................................Hero........................................ */
 .hero-group {
   width: 476px;
@@ -280,7 +269,6 @@ address {
 .about .item:last-child {
   margin-right: 0;
 }
-
 .about-group {
   width: 500px;
 }
@@ -504,7 +492,6 @@ address {
   margin: 15px;
   flex-basis: calc((100% - 120px) / 4);
 }
-
 /* contacts */
 .contacts {
   max-width: 1280px;
@@ -529,7 +516,6 @@ address {
 .footer .link {
   font-weight: 600;
 }
-
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-text-color);
