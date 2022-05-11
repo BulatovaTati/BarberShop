@@ -381,7 +381,7 @@ address {
   max-width: 185px;
   height: 133px;
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: var(--secondary-bcg-color);
 }
 .benefits-amount {
   margin-bottom: 6px;
@@ -406,16 +406,6 @@ address {
 .benefits-group {
   width: 500px;
 }
-.benefits-group .uppertitle::before {
-  content: "";
-  display: inline-block;
-
-  margin-right: 20px;
-  width: 60px;
-  height: 1px;
-
-  background-color: var(--primary-text-color);
-}
 .benefits-group .uppertitle {
   display: inline-flex;
   align-items: center;
@@ -424,9 +414,17 @@ address {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.benefits-group .uppertitle::before {
+  content: "";
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+
+  background-color: var(--primary-text-color);
+}
 .benefits-group .section-title {
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
@@ -444,9 +442,19 @@ address {
   background-color: var(--secondary-bcg-color);
 }
 .team .uppertitle {
+  display: inline-flex;
+  align-items: center;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.team .uppertitle::before {
+  content: "";
+
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--primary-text-color);
 }
 .team .section-title {
   font-family: "Raleway";
@@ -472,9 +480,19 @@ address {
 }
 /* .............................................GALLERY......................................... */
 .gallery .uppertitle {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 44px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.gallery .uppertitle::before {
+  content: "";
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--primary-text-color);
 }
 .gallery .section-title {
   font-weight: 700;
@@ -502,12 +520,51 @@ address {
   background-repeat: no-repeat;
   background-position: top left calc(50% + 325px);
 }
+.contacts-title {
+  margin-bottom: 40px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.66;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-text-color);
+}
+.contacts .link {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-price-contacts-color);
+}
+.contacts .item:not(:last-child) {
+  margin-bottom: 20px;
+}
 /* .........................................Footer section */
 .footer {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 56px;
   padding-bottom: 56px;
+  background-color: var(--secondary-bcg-color);
 }
-
+.socials-list {
+  margin-left: auto;
+}
+.socials-list .item {
+  margin-right: 40px;
+}
+.socials-list .item:last-child {
+  margin-right: 0;
+}
+.socials-list::before {
+  content: "";
+  display: block;
+  margin-right: 40px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--primary-text-color);
+}
 .footer .copyright {
   font-weight: 600;
   color: var(--text-price-contacts-color);
@@ -518,4 +575,8 @@ address {
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-text-color);
+}
+.copiright {
+  font-weight: 600;
+  color: var(--text-price-contacts-color);
 }
