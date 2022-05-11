@@ -509,7 +509,7 @@ address {
   margin: 15px;
   flex-basis: calc((100% - 120px) / 4);
 }
-/* contacts */
+/* ................................................contacts */
 .contacts {
   max-width: 1280px;
   height: 644px;
@@ -530,6 +530,9 @@ address {
 
   color: var(--secondary-text-color);
 }
+.contacts-list {
+  margin-bottom: 70px;
+}
 .contacts .link {
   font-size: 18px;
   line-height: 1.67;
@@ -537,6 +540,29 @@ address {
 }
 .contacts .item:not(:last-child) {
   margin-bottom: 20px;
+}
+.time {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+.time::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.4);
+}
+.time-day {
+  font-size: 18px;
+  line-height: 1.67;
+
+  color: var(--text-price-contacts-color);
 }
 /* .........................................Footer section */
 .footer {
