@@ -464,7 +464,6 @@ address {
   letter-spacing: 0.05em;
 }
 .member-title {
-  margin-top: 30px;
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 18px;
@@ -476,6 +475,8 @@ address {
 }
 .member-group {
   outline: 2px solid orange;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .member-position {
   margin-bottom: 30px;
@@ -487,16 +488,26 @@ address {
 .socials {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
 }
 .socials-link {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
   border-radius: 50%;
   width: 44px;
   height: 44px;
   background-color: var(--primary-bcg-color);
+}
+.socials-icon {
+  fill: var(--primary-text-color);
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--accent-text-color);
 }
 /* .............................................GALLERY......................................... */
 .gallery .uppertitle {
