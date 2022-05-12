@@ -352,6 +352,14 @@ address {
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
+.price .uppertitle:hover,
+.price .uppertitle:focus {
+  color: var(--accent-text-color);
+}
+.price .uppertitle:hover::before,
+.price .uppertitle:focus::before {
+  background-color: var(--accent-text-color);
+}
 .price .uppertitle::before {
   content: "";
   margin-right: 20px;
@@ -426,6 +434,14 @@ address {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.benefits-group .uppertitle:hover,
+.benefits-group .uppertitle:focus {
+  color: var(--accent-text-color);
+}
+.benefits-group .uppertitle:hover::before,
+.benefits-group .uppertitle:focus::before {
+  background-color: var(--accent-text-color);
+}
 .benefits-group .uppertitle::before {
   content: "";
   margin-right: 20px;
@@ -459,6 +475,14 @@ address {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.team .uppertitle:hover,
+.team .uppertitle:focus {
+  color: var(--accent-text-color);
+}
+.team .uppertitle:hover::before,
+.team .uppertitle:focus::before {
+  background-color: var(--accent-text-color);
 }
 .team .uppertitle::before {
   content: "";
@@ -529,6 +553,14 @@ address {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.gallery .uppertitle:hover,
+.gallery .uppertitle:focus {
+  color: var(--accent-text-color);
+}
+.gallery .uppertitle:hover::before,
+.gallery .uppertitle:focus::before {
+  background-color: var(--accent-text-color);
 }
 .gallery .uppertitle::before {
   content: "";
