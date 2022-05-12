@@ -19,6 +19,10 @@
   --indent: 30px;
 }
 /*..................................................Общее .............................................*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-style: normal;
   font-family: var(--main-font);
@@ -564,10 +568,12 @@ address {
 .contacts-list {
   margin-bottom: 70px;
 }
-.contacts .link {
+.contacts-link {
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-price-contacts-color);
+}
+.contacts-link .icon {
 }
 .contacts .item:not(:last-child) {
   margin-bottom: 20px;
