@@ -293,6 +293,14 @@ address {
   height: 1px;
   background-color: #111319;
 }
+.about .uppertitle:hover,
+.about .uppertitle:focus {
+  color: var(--accent-text-color);
+}
+.about .uppertitle:hover::before,
+.about .uppertitle:focus::before {
+  background-color: var(--accent-text-color);
+}
 .about .section-title {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
@@ -569,11 +577,23 @@ address {
   margin-bottom: 70px;
 }
 .contacts-link {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   line-height: 1.67;
   color: var(--text-price-contacts-color);
 }
-.contacts-link .icon {
+.contacts-icon {
+  margin-right: 16px;
+  /* fill: var(--text-price-contacts-color); */
+}
+/* .contacts-icon:hover,
+.contacts-icon:focus {
+  fill: var(--accent-text-color);
+} */
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-text-color);
 }
 .contacts .item:not(:last-child) {
   margin-bottom: 20px;
