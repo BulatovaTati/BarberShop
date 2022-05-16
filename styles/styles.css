@@ -92,7 +92,7 @@ address {
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 2px solid orangered; */
+  outline: 2px solid orangered;
 }
 .section {
   padding-top: 130px;
@@ -209,10 +209,14 @@ address {
   cursor: pointer;
 }
 .slider-btn-disable {
-  text-align: left;
+  margin-right: 26px;
 
   color: rgba(157, 164, 189, 0.6);
   border-color: rgba(157, 164, 189, 0.6);
+}
+.list-button {
+  display: flex;
+  justify-content: end;
 }
 /* .................................................Hero........................................ */
 .hero-group {
@@ -227,13 +231,11 @@ address {
 
   color: rgba(157, 164, 189, 0.6);
 }
-.hero .item {
-  margin-right: 40px;
-}
 .hero .item:last-child {
   margin-right: 0;
 }
 .hero .link {
+  margin-right: 40px;
   font-weight: 600;
   color: var(--primary-text-color);
 }
@@ -389,11 +391,12 @@ address {
 /* .....................................................BENEFITS................................................ */
 .benefits-container {
   display: flex;
+  justify-content: center;
 }
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 380px;
+  width: 378px;
   margin-right: 130px;
 }
 .benefits-list .item {
@@ -461,6 +464,32 @@ address {
   font-size: 18px;
   line-height: 1.67;
   color: var(--thirth-text-color);
+}
+/* new test code  */
+.benefits-list {
+  position: relative;
+}
+.item-600 {
+  position: absolute;
+
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
+}
+.item-20 {
+  position: absolute;
+  bottom: -25%;
+  /* margin-right: 23px; */
+}
+.item-50 {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  /* margin-bottom: 30px; */
+}
+.item-100 {
+  position: absolute;
+  bottom: -45%;
+  left: 55%;
 }
 /* ...........................................TEAM................................... */
 .team {
