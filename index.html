@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container flex">
+      <div class="container header flex">
         <!-- Логотип сайту -->
         <a
           class="logo"
@@ -34,7 +34,7 @@
         <nav class="navigation">
           <ul class="navigation-list list flex">
             <li class="navigation-item">
-              <a class="link navigation-link" href="#about">О нас</a>
+              <a class="link navigation-link current" href="#about">О нас</a>
             </li>
             <li class="navigation-item">
               <a class="link navigation-link" href="#price">Услуги и цены</a>
@@ -91,6 +91,11 @@
               carefully, and tastefully.
             </p>
           </div>
+          <ul class="slider-pagination list">
+            <li class="slider-item active"></li>
+            <li class="slider-item"></li>
+            <li class="slider-item"></li>
+          </ul>
           <ul class="list list-button">
             <li class="item">
               <button class="slider-btn slider-btn-disable" type="button">
@@ -485,8 +490,21 @@
         </div>
       </section>
       <section class="contacts section" id="contacts">
-        <div class="container">
+        <div class="container container-contacts">
           <h2 class="visually-hidden">Контакты</h2>
+          <form class="form-registration">
+            <p class="">Онлайн-запись</p>
+            <label class="">
+              <input class="" type="text" />
+            </label>
+            <label class="">
+              <input class="" type="text" />
+            </label>
+            <label class="">
+              <input class="" type="text" />
+            </label>
+            <button class="" type="submit"></button>
+          </form>
           <address>
             <p class="contacts-title">Контакты</p>
             <ul class="contacts-list list">
@@ -521,8 +539,10 @@
               </li>
             </ul>
           </address>
+          <!-- <div class="time-container"> -->
           <p class="time">Время работы</p>
           <!-- <time class="time-day">Ежедневно с 9:00 до 22:00</time> -->
+          <!-- </div> -->
         </div>
       </section>
     </main>
@@ -552,5 +572,10 @@
         </ul>
       </div>
     </footer>
+    <button class="scroll-to-top" type="button">
+      <svg class="scroll-icon" width="15" height="15">
+        <use class="icon" href="./photos/icons.svg#icon-arrow-up-solid"></use>
+      </svg>
+    </button>
   </body>
 </html>
