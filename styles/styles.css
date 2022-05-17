@@ -392,6 +392,7 @@ address {
 .benefits-container {
   display: flex;
   justify-content: center;
+  height: 322px;
 }
 .benefits-list {
   display: flex;
@@ -477,18 +478,18 @@ address {
 }
 .item-20 {
   position: absolute;
-  bottom: -25%;
+  bottom: 10%;
   /* margin-right: 23px; */
 }
 .item-50 {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 55%;
   /* margin-bottom: 30px; */
 }
 .item-100 {
   position: absolute;
-  bottom: -45%;
+  bottom: 0;
   left: 55%;
 }
 /* ...........................................TEAM................................... */
