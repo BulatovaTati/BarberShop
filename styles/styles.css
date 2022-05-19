@@ -265,15 +265,32 @@ address {
   border-color: rgba(157, 164, 189, 0.6);
 }
 .list-button {
-  display: flex;
-  justify-content: end;
+  position: absolute;
+  right: 0;
+  bottom: -40%;
 }
 /* .................................................Hero........................................ */
 .hero {
   height: 680px;
+  background-image: url(../photos/hero-overlay.png),
+    linear-gradient(to right, #fff 12%, #191c26 12%);
+  background-size: 1125px 680px, contain;
+  background-position: top right, center;
+  background-repeat: no-repeat;
+  height: 680px;
 }
 .hero .container {
   position: relative;
+  display: flex;
+}
+.hero-socials-container {
+  flex-basis: 100px;
+  display: flex;
+  align-items: center;
+}
+.socials-list {
+  transform: translateY(400px) rotate(-90deg);
+  transform-origin: top left;
 }
 .hero-group {
   width: 476px;
