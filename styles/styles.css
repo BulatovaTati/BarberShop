@@ -178,8 +178,7 @@ address {
 .header-phone:focus {
   color: var(--accent-text-color);
 }
-.header .btn {
-}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -361,6 +360,28 @@ address {
   font-weight: 600;
   color: #303030;
 }
+.header-btn {
+  animation: swing 6s ease-in-out infinite forwards;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(6deg);
+  }
+  4% {
+    transform: rotate(-6deg);
+  }
+  8% {
+    transform: rotate(3deg);
+  }
+  12% {
+    transform: rotate(-3deg);
+  }
+  16% {
+    transform: rotate(0);
+  }
+}
+
 /* modal */
 .backdrop {
   position: fixed;
@@ -370,7 +391,8 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 
-  transition: opacity var(--fast-anim), visibility var(--fast-anim);
+  transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    visibility 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -796,19 +818,31 @@ address {
   background-position: top left calc(50% + 325px);
 }
 /* Form */
-.container-contacts {
+.contact-form {
   display: flex;
+  flex-direction: column;
+  width: 300px;
 }
-.form-registration {
-  width: 560px;
+/* .contacts-left-side {
 }
+.contact-form {
+} */
 
-.contacts-title {
+.contacts-left-side-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-text-color);
+}
+.contacts-rigth-side-title {
   margin-bottom: 40px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.66;
+  line-height: 1.16;
   letter-spacing: 0.05em;
 
   color: var(--secondary-text-color);
@@ -825,12 +859,8 @@ address {
 }
 .contacts-icon {
   margin-right: 16px;
-  /* fill: var(--text-price-contacts-color); */
 }
-/* .contacts-icon:hover,
-.contacts-icon:focus {
-  fill: var(--accent-text-color);
-} */
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-text-color);

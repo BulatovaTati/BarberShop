@@ -53,9 +53,9 @@
             >+38 044 111 11 11</a
           >
           <button
+            data-modal-open
             class="btn btn-mode-dark header-btn"
             type="button"
-            data-modal-open
           >
             онлайн-запись
           </button>
@@ -513,22 +513,48 @@
       </section>
       <section class="contacts section" id="contacts">
         <div class="container container-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <form class="form-registration">
-            <p class="">Онлайн-запись</p>
-            <label class="">
-              <input class="" type="text" />
-            </label>
-            <label class="">
-              <input class="" type="text" />
-            </label>
-            <label class="">
-              <input class="" type="text" />
-            </label>
-            <button class="" type="submit"></button>
-          </form>
-          <address>
-            <p class="contacts-title">Контакты</p>
+          <!-- Левая часть -->
+          <div class="contacts-left-side">
+            <h2 class="contacts-left-side-title">Онлайн-запись</h2>
+            <form class="contact-form" name="contact-form" autocomplete="off">
+              <label class="form-group">
+                <span class="form-label">Имя</span>
+                <input
+                  class="form-input"
+                  type="name"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Татьяна"
+                />
+              </label>
+              <label class="form-group">
+                <span class="form-label">Телефон</span>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="user-phone"
+                  name="user-phone"
+                  placeholder="+38 063 000 00 00"
+                />
+              </label>
+              <label class="form-group">
+                <span class="form-label">Сообщение</span>
+                <textarea
+                  class="form-message"
+                  name="user-massage"
+                  cols="30"
+                  rows="10"
+                  placeholder="Ваш комментарий"
+                ></textarea>
+              </label>
+
+              <button class="btn btn-mode-dark" type="submit">Отправить</button>
+            </form>
+          </div>
+
+          <!-- Правая часть -->
+          <div class="contacts-rigth-side">
+            <h2 class="contacts-rigth-side-title">Контакты</h2>
             <ul class="contacts-list list">
               <li class="contacts-item item">
                 <a
@@ -560,11 +586,11 @@
                 >
               </li>
             </ul>
-          </address>
-          <!-- <div class="time-container"> -->
-          <p class="time">Время работы</p>
-          <!-- <time class="time-day">Ежедневно с 9:00 до 22:00</time> -->
-          <!-- </div> -->
+            <div class="time-container">
+              <p class="time">Время работы</p>
+              <time class="time-day">Ежедневно с 9:00 до 22:00</time>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -599,6 +625,6 @@
         <use class="icon" href="./photos/icons.svg#icon-arrow-up-solid"></use>
       </svg>
     </button>
-    <script src="./js/modal.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>
