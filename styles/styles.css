@@ -406,7 +406,6 @@ address {
   left: 50%;
   /* transform: translate(-50%, -50%); */
   width: 500px;
-  height: 400px;
   background-color: #fff;
   border-radius: 20px;
 
@@ -443,6 +442,7 @@ address {
 
   cursor: pointer;
 }
+/* Modal form */
 
 /* .................................................ABOUT......................................... */
 .about .list {
@@ -821,14 +821,87 @@ address {
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 300px;
 }
-/* .contacts-left-side {
+.contacts-left-side {
+  width: 570px;
 }
-.contact-form {
-} */
+.form__wrapper {
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+}
+.form-group {
+  position: relative;
+}
+.form__wrapper .form-group {
+  padding-top: 20px;
+}
+.form_label {
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 
-.contacts-left-side-title {
+  color: rgba(157, 164, 189, 0.4);
+}
+.form__wrapper .form_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(20px);
+}
+.form-input:focus + .form-label {
+  transform: translateY(0);
+}
+.form__wrapper .form-group:not(:last-child) {
+  margin-right: 30px;
+}
+.form-group:focus .form-input {
+  outline: transparent;
+  color: #ffffff;
+  width: 270px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.form-input:focus {
+  border-bottom: 1px solid white;
+}
+.form-input::placeholder {
+  opacity: 0;
+}
+.form-message::placeholder {
+  opacity: 0;
+}
+.form-input:focus::placeholder {
+  opacity: 1;
+}
+.form-message:focus::placeholder {
+  opacity: 1;
+}
+.form-message {
+  outline: transparent;
+  color: #ffffff;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  resize: none;
+}
+.form-message:focus {
+  border-bottom: 1px solid white;
+}
+.contact-form > .form-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 44px;
+}
+.form-message:focus + .form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form-group .contacts-left-side-title {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
