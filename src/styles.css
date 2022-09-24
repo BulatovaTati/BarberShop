@@ -1,7 +1,7 @@
 :root {
   /* .................................................FONT */
-  --main-font: "Open Sans", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   /* .....................................Text-Color */
   --primary-text-color: #303030;
   --secondary-text-color: #ffffff;
@@ -120,7 +120,7 @@ address {
   margin-right: 71px;
 }
 .logo::after {
-  content: "";
+  content: '';
   margin-top: 22px;
   display: block;
   width: 100px;
@@ -143,7 +143,7 @@ address {
 }
 .navigation-link.current::after {
   position: absolute;
-  content: "";
+  content: '';
   bottom: 0;
   left: 0;
   display: block;
@@ -271,7 +271,7 @@ address {
 /* .................................................Hero........................................ */
 .hero {
   height: 680px;
-  background-image: url(../photos/hero-overlay.png),
+  background-image: url('./images/hero-overlay.jpg'),
     linear-gradient(to right, #fff 12%, #191c26 12%);
   background-size: 1125px 680px, contain;
   background-position: top right, center;
@@ -467,7 +467,7 @@ address {
   text-transform: uppercase;
 }
 .about .uppertitle::before {
-  content: "";
+  content: '';
   margin-right: 20px;
   display: block;
   width: 60px;
@@ -484,7 +484,7 @@ address {
 }
 .about .section-title {
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
@@ -509,7 +509,7 @@ address {
   margin-right: auto;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url(../photos/price-overlay.jpg);
+    url('./images/price-overlay.jpg');
 
   background-repeat: no-repeat;
   background-position: center;
@@ -542,7 +542,7 @@ address {
   background-color: var(--accent-text-color);
 }
 .price .uppertitle::before {
-  content: "";
+  content: '';
   margin-right: 20px;
   display: block;
   width: 60px;
@@ -626,7 +626,7 @@ address {
   background-color: var(--accent-text-color);
 }
 .benefits-group .uppertitle::before {
-  content: "";
+  content: '';
   margin-right: 20px;
   width: 60px;
   height: 1px;
@@ -694,7 +694,7 @@ address {
   background-color: var(--accent-text-color);
 }
 .team .uppertitle::before {
-  content: "";
+  content: '';
 
   margin-right: 20px;
   width: 60px;
@@ -702,7 +702,7 @@ address {
   background-color: var(--primary-text-color);
 }
 .team .section-title {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
@@ -772,7 +772,7 @@ address {
   background-color: var(--accent-text-color);
 }
 .gallery .uppertitle::before {
-  content: "";
+  content: '';
   margin-right: 20px;
   width: 60px;
   height: 1px;
@@ -798,7 +798,7 @@ address {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: "";
+  content: '';
   display: flex;
   align-items: center;
   justify-content: center;
@@ -812,7 +812,7 @@ address {
   height: 644px;
   margin: 0 auto;
   background-color: var(--dark-bcg);
-  background-image: url(../photos/contacts-Bg.jpg);
+  background-image: url('./images/contacts-Bg.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left calc(50% + 325px);
@@ -951,7 +951,7 @@ address {
   color: var(--secondary-text-color);
 }
 .time::before {
-  content: "";
+  content: '';
   display: inline-block;
   margin-right: 20px;
   width: 60px;
@@ -984,7 +984,7 @@ address {
   margin-right: 0;
 }
 .socials-list::before {
-  content: "";
+  content: '';
   display: block;
   margin-right: 40px;
   width: 60px;
