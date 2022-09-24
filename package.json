@@ -2,17 +2,17 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://BulatovaTati.github.io/homework-Tati/",
+  "homepage": "https://BulatovaTati.github.io/homework-Tati",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /homework-Tati/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/BulatovaTati/homework-Tati.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Bulatova Tetiana <kohodatat@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
