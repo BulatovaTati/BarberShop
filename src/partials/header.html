@@ -1,0 +1,99 @@
+<header class="header">
+  <div class="container header flex">
+    <!-- Логотип сайту -->
+    <a class="logo" href="./index.html" aria-label="Логотип сайту BarberShop"
+      ><img src="./images/logo.svg" alt="Логотип" width="70" height="56"
+    /></a>
+    <!-- Навігація по сторінці -->
+    <nav class="navigation">
+      <ul class="navigation-list list flex">
+        <li class="navigation-item">
+          <a class="link navigation-link current" href="#about">О нас</a>
+        </li>
+        <li class="navigation-item">
+          <a class="link navigation-link" href="#price">Услуги и цены</a>
+        </li>
+        <li class="navigation-item">
+          <a class="link navigation-link" href="#team">Мастера</a>
+        </li>
+        <li class="navigation-item">
+          <a class="link navigation-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Контакти -->
+    <div class="header-group flex">
+      <a class="link header-phone" href="tel:+380441111111"
+        >+38 044 111 11 11</a
+      >
+      <button
+        data-modal-open
+        class="btn btn-mode-dark header-btn"
+        type="button"
+      >
+        онлайн-запись
+      </button>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-wrapper">
+          <button class="modal-btn" data-modal-close>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              width="20"
+              height="20"
+            >
+              <path
+                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+              />
+            </svg>
+          </button>
+          <strong class="">Оставьте заявку</strong>
+          <form class="">
+            <label class="">
+              <span class="">Name</span>
+              <input type="text" name="user-name" />
+              <span class=""></span>
+              <span class=""></span>
+              <svg>
+                <use></use>
+              </svg>
+            </label>
+            <label class="">
+              <span>Phone</span>
+              <input type="text" name="user-phone" />
+              <span class=""></span>
+              <span class=""></span>
+              <svg>
+                <use></use>
+              </svg>
+            </label>
+            <label class="">
+              <span>Email</span>
+              <input type="text" />
+              <span class=""></span>
+              <span class=""></span>
+              <svg>
+                <use></use>
+              </svg>
+            </label>
+            <label class="form__type">
+              <span class="">Type</span>
+              <span><input type="radio" /></span>
+              <span><input type="radio" /></span>
+            </label>
+            <label class="form__policy-group">
+              <input type="checkbox" name="" />
+              <span class="custom-checkbox">
+                <svg>
+                  <use></use>
+                </svg>
+              </span>
+              <span class="form-policy-desc">Acoord</span>
+            </label>
+            <button type="submit" class="btn btn-mode-light">Done</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

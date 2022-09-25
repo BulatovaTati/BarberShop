@@ -8,11 +8,30 @@
 @import './base/animations';
 @import './base/resets';
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
 
-@import './components/btn';
+    gap: $indent
+}
+
+.grid-item {
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
+
+address {
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+@import './components/btns';
 @import './components/socials';
-@import './components/mobile-menu';
-@import './components/modal-menu';
+@import './components/menu';
+@import './components/modal';
 @import './components/scroll';
 @import './components/bcg-img';
 

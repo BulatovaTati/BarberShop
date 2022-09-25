@@ -1,0 +1,67 @@
+.about .list {
+    margin-right: 64px;
+}
+
+.about .item {
+    margin-right: 30px;
+}
+
+.about .item:last-child {
+    margin-right: 0;
+}
+
+.about-group {
+    width: 500px;
+}
+
+.about .uppertitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.about .uppertitle::before {
+    content: '';
+    margin-right: 20px;
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: getColor(uppert);
+}
+
+.about .uppertitle:hover,
+.about .uppertitle:focus {
+    color: getColor(accent);
+}
+
+.about .uppertitle:hover::before,
+.about .uppertitle:focus::before {
+    background-color: getColor(accent);
+}
+
+.about .section-title {
+    margin-bottom: 20px;
+    font-family: getFort(accent);
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+}
+
+.about .subtitle {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    color: getColor(thirth);
+}
+
+.about .description {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.86;
+    color: getColor(thirth);
+}

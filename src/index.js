@@ -2,8 +2,8 @@
 // import './js/swiper';
 
 // import './js/menu';
-// import './js/modal';
-// import './js/to-top';
+import './js/modal';
+import './js/to-top';
 
 // import './js/readmore-prod';
 // import './js/readmore-about';

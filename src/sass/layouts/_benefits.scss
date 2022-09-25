@@ -1,0 +1,120 @@
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    height: 322px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 378px;
+    margin-right: 130px;
+}
+
+.benefits-list .item {
+    padding: 20px 24px;
+    max-width: 185px;
+    height: 133px;
+    text-align: center;
+    background-color: getColor(secondary);
+}
+
+.benefits-amount {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.benefits-amount-decor {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+
+    color: getColor(accent);
+}
+
+.benefits-text {
+    font-weight: 600;
+    text-align: center;
+}
+
+.benefits-group {
+    width: 500px;
+}
+
+.benefits-group .uppertitle {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.benefits-group .uppertitle:hover,
+.benefits-group .uppertitle:focus {
+    color: getColor(accent);
+}
+
+.benefits-group .uppertitle:hover::before,
+.benefits-group .uppertitle:focus::before {
+    background-color: getColor(accent);
+}
+
+.benefits-group .uppertitle::before {
+    content: '';
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+
+    background-color: getColor(primary);
+}
+
+.benefits-group .section-title {
+    margin-bottom: 20px;
+    font-family: getFont(accent);
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+}
+
+.benefits-group .subtitle {
+    font-size: 18px;
+    line-height: 1.67;
+    color: getColor(thirth);
+}
+
+/* new test code  */
+.benefits-list {
+    position: relative;
+}
+
+.item-600 {
+    position: absolute;
+
+    /* margin-right: 30px;
+  margin-bottom: 30px; */
+}
+
+.item-20 {
+    position: absolute;
+    bottom: 10%;
+    /* margin-right: 23px; */
+}
+
+.item-50 {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    /* margin-bottom: 30px; */
+}
+
+.item-100 {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+}

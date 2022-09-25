@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -18,4 +22,16 @@ img {
 
 a {
     @extend %link;
+}
+
+.link,
+.socials-link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

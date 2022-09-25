@@ -1,20 +1,44 @@
 $colors: (
-    'primary': #2E2520,
-    'program-donats': #000000,
+    'primary': #303030,
     'secondary': #ffffff,
+    'thirth': #555555,
+    'accent ': #ff6c00,
+    'uppert': 111319,
 
-    'background-color': #ffffff,
-    'bcg-clear': #FFFFF9,
-    'accent-icon': #674D40,
-    'accent-before': #AB816C,
-    'color-label': rgb(171, 129, 108),
-    'color-form-reg': #FFFFF9,
+    'primary-bcg': #ffffff,
+    'secondary-bcg': #f7f7f7,
+    'backdrop': rgba(255, 255, 255, 0.3),
+    'back-modal': rgba(0, 0, 0, 0.3),
+    'dark-bcg': #191c26,
+    'gall-bcg':rgba(0, 0, 0, 0.5),
 
+    'logo':#c4c4c4,
+    'text-price-contacts-color': #9da4bd,
 
+    'header-fix-bcg': rgba(25, 28, 38, 0.2),
+    'btn-dis': rgba(157, 164, 189, 0.6),
     'text-shadow': rgba(171, 129, 108, 0.15),
-    'bcg': rgba(254, 243, 228, 0.9),
-    'bcg-up': rgba(171, 129, 108, 0.5),
+    'cont-form': rgba(157, 164, 189, 0.4),
+
 );
+
+/* .................................................FONT */
+/* --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif; */
+/* .....................................Text-Color */
+/* --primary-text-color: #303030;
+  --secondary-text-color: #ffffff;
+  --thirth-text-color: #555555;
+  --accent-text-color: #ff6c00;
+  --accent-secondary-text-color: #ffffff; */
+/* ........................................BCG */
+/* --primary-bcg-color: #ffffff;
+  --secondary-bcg-color: #f7f7f7;
+  --text-price-contacts-color: #9da4bd;
+  --dark-bcg: #191c26; */
+
+$items: 1;
+$indent: 30px;
 
 $shadows: (
     'card': 0px 8px 30px rgba(212, 20, 67, 0.1),
@@ -28,8 +52,8 @@ $properties: (
 );
 
 $fonts: (
-    'basic': ('Montserrat', sans-serif),
-    'accent': ('Caveat Brush', sans-serif),
+    'basic': ('Open Sans', sans-serif),
+    'accent': ('Raleway', sans-serif),
 );
 
 $breakpoints: (
