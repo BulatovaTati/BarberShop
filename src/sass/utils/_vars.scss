@@ -1,0 +1,84 @@
+$colors: (
+    'primary': #2E2520,
+    'program-donats': #000000,
+    'secondary': #ffffff,
+
+    'background-color': #ffffff,
+    'bcg-clear': #FFFFF9,
+    'accent-icon': #674D40,
+    'accent-before': #AB816C,
+    'color-label': rgb(171, 129, 108),
+    'color-form-reg': #FFFFF9,
+
+
+    'text-shadow': rgba(171, 129, 108, 0.15),
+    'bcg': rgba(254, 243, 228, 0.9),
+    'bcg-up': rgba(171, 129, 108, 0.5),
+);
+
+$shadows: (
+    'card': 0px 8px 30px rgba(212, 20, 67, 0.1),
+    'btn': 0px 6px 5px rgba(0, 0, 0, 0.29),
+    'box': 0px 4px 4px rgb(0 0 0 / 25%),
+);
+
+$properties: (
+    'cubic': cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    'time': 300ms,
+);
+
+$fonts: (
+    'basic': ('Montserrat', sans-serif),
+    'accent': ('Caveat Brush', sans-serif),
+);
+
+$breakpoints: (
+    'wmobile':319.98px,
+    'mobile': 320px,
+    'tablet': 768px,
+    'wdesktop': 1279.98px,
+    'desktop': 1280px,
+);
+
+// Colors
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+// Shadows
+@function getShadow($key) {
+    @return map-get($shadows, $key);
+}
+
+// Properties
+@function getProperty($key) {
+    @return map-get($properties, $key);
+}
+
+// Fonts
+@function getFont($key) {
+    @return map-get($fonts, $key);
+}
+
+// Breakpoints
+@function getSize($key) {
+    @return map-get($breakpoints, $key);
+}
+
+$btnW: (
+    'mobile': 145px,
+    'desktop': 158px,
+);
+
+@function getBtnW($key) {
+    @return map-get($btnW, $key);
+}
+
+$btnH: (
+    'mobile': 40px,
+    'desktop': 45px,
+);
+
+@function getBtnH($key) {
+    @return map-get($btnH, $key);
+}
