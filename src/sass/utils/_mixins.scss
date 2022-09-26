@@ -29,7 +29,13 @@
 }
 
 @mixin sectionpadd($point) {
-    @if $point ==mobile {
+    @if $point ==wmobile {
+        @media only screen and (max-width: 319.98px) {
+            padding: 64px 0;
+        }
+    }
+
+    @else if $point ==mobile {
         @media only screen and (min-width: 320px) {
             padding: 84px 0;
         }
