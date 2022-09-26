@@ -4,32 +4,34 @@
     min-width: 160px;
     min-height: 40px;
 
-    font-family: inherit;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
+
     letter-spacing: 0.09em;
+    @include lh(16, 12, 12px);
     text-transform: uppercase;
 
-    border: 1px solid getColor(accent);
+    border: 1px solid #ff6c00;
     border-radius: 25px;
     background-color: transparent;
     cursor: pointer;
+    transition: color getProperty(time) getProperty(cubic),
+        background-color getProperty(time) getProperty(cubic);
+
+    &:hover,
+    &:focus {
+        color: getColor(secondary);
+        background-color: #ff6c00;
+    }
 }
 
-.btn:hover,
-.btn:focus {
-    color: getColor(secondary);
-    background-color: getColor(accent);
-}
 
-.btn-mode-light {
-    color: getColor(primary);
-}
+// .btn-mode-light {
+//     color: getColor(primary);
+// }
 
-.btn-mode-dark {
-    color: getColor(secondary);
-}
+// .btn-mode-dark {
+//     color: getColor(secondary);
+// }
 
 .slider-btn {
     width: 60px;

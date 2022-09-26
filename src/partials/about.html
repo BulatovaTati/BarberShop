@@ -1,40 +1,90 @@
 <section class="about section" id="about">
-  <div class="container flex">
-    <ul class="list flex">
-      <li class="item">
-        <img
-          class="about-img"
-          src="./images/about/beard.jpg"
-          alt="Бритье бороды"
-          width="270"
-          height="445"
-        />
-      </li>
-      <li class="item">
-        <img
-          class="about-img"
-          src="./images/about/backofthehead.jpg"
-          alt="Бритье опасной бритвой"
-          width="270"
-          height="445"
-        />
-      </li>
-    </ul>
-    <div class="about-group">
-      <p class="uppertitle">О НАС</p>
-      <h2 class="section-title">Лучший Барбершоп твоего города</h2>
-      <p class="subtitle">
-        Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
-        нам.
-      </p>
-      <p class="description">
-        Мы команда, которая никогда не останавливается на достигнутом и жаждет
-        перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
-        сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
-        волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
-        приходит!
-      </p>
-      <button class="btn btn-mode-light" type="button">онлайн-запись</button>
+  <div class="container">
+    <div class="about__container">
+      <ul class="about__gallery">
+        <li class="about__item">
+          <picture>
+            <source
+              srcset="
+                ./images/tablet/about/img1@1x.png 1x,
+                ./images/tablet/about/img1@2x.png 2x,
+                ./images/tablet/about/img1@3x.png 3x
+              "
+              media="(max-width: 1279.98px)"
+              type="image/png"
+              width="330"
+              height="235"
+            />
+            <source
+              srcset="
+                ./images/desktop/about/img1@1x.png 1x,
+                ./images/desktop/about/img1@2x.png 2x,
+                ./images/desktop/about/img1@3x.png 3x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+              width="270"
+              height="445"
+            />
+            <img
+              class="about__img"
+              src="./images/desktop/about/img1@2x.png"
+              alt="Бритье бороды"
+              width="270"
+              height="445"
+            />
+          </picture>
+        </li>
+        <li class="about__item">
+          <picture>
+            <source
+              srcset="
+                ./images/tablet/about/img2@1x.png 1x,
+                ./images/tablet/about/img2@2x.png 2x,
+                ./images/tablet/about/img2@3x.png 3x
+              "
+              media="(max-width: 1279.98px)"
+              type="image/png"
+              width="330"
+              height="235"
+            />
+            <source
+              srcset="
+                ./images/desktop/about/img2@1x.png 1x,
+                ./images/desktop/about/img2@2x.png 2x,
+                ./images/desktop/about/img2@3x.png 3x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+              width="270"
+              height="445"
+            />
+            <img
+              class="about__img"
+              src="./images/desktop/about/img2@2x.png"
+              alt="Бритье опасной бритвой"
+              width="270"
+              height="445"
+            />
+          </picture>
+        </li>
+      </ul>
+      <div class="about__group">
+        <p class="about__uppertitle">О НАС</p>
+        <h2 class="about__title">Лучший Барбершоп твоего города</h2>
+        <p class="about__subtitle">
+          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
+          нам.
+        </p>
+        <p class="about__description">
+          Мы команда, которая никогда не останавливается на достигнутом и жаждет
+          перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
+          сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
+          волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
+          приходит!
+        </p>
+        <button class="btn btn-mode-light" type="button">онлайн-запись</button>
+      </div>
     </div>
   </div>
 </section>

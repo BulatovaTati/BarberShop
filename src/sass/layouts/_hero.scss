@@ -1,106 +1,118 @@
-.hero {
-    height: 680px;
-    background-image: url('../images/hero-overlay.jpg'),
-        linear-gradient(to right, #fff 12%, #191c26 12%);
-    background-size: 1125px 680px, contain;
-    background-position: top right, center;
-    background-repeat: no-repeat;
-    height: 680px;
-}
+// .hero {
+//     @media screen and (min-width: getSize(desktop)) {
+//         height: 680px;
+//         background-image: url('../images/hero-overlay.jpg'),
+//             linear-gradient(to right, #fff 12%, #191c26 12%);
+//         background-size: 1125px 680px, contain;
+//         background-position: top right, center;
+//         background-repeat: no-repeat;
+//         height: 680px;
+//     }
+// }
 
-.hero .container {
-    position: relative;
-    display: flex;
-}
+// .hero .container {
+//     @media screen and (min-width: getSize(desktop)) {
+//         position: relative;
+//         display: flex;
+//     }
+// }
 
-.hero-socials-container {
-    flex-basis: 100px;
-    display: flex;
-    align-items: center;
-}
+// .hero-socials-container {
+//     @media screen and (min-width: getSize(desktop)) {
+//         flex-basis: 100px;
+//         display: flex;
+//         align-items: center;
+//     }
+// }
 
-.socials-list {
-    transform: translateY(400px) rotate(-90deg);
-    transform-origin: top left;
-}
+// .socials-list {
+//     @media screen and (min-width: getSize(desktop)) {
+//         transform: translateY(400px) rotate(-90deg);
+//         transform-origin: top left;
+//     }
+// }
 
-.hero-group {
-    width: 476px;
-    padding-top: 272px;
-}
+// .hero-group {
+//     @media screen and (min-width: getSize(desktop)) {
+//         width: 476px;
+//         padding-top: 272px;
+//     }
+// }
 
-.hero .slider-pagination {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    width: 18px;
-}
+// .hero .slider-pagination {
+//     @media screen and (min-width: getSize(desktop)) {
+//         position: absolute;
+//         top: 50%;
+//         right: 0;
+//         transform: translateY(-50%);
+//         display: flex;
+//         align-items: flex-end;
+//         flex-direction: column;
+//         width: 18px;
+//     }
+// }
 
-.slider-item {
-    width: 8px;
-    height: 2px;
-    background-color: getColor(text-price-contacts-color);
-    margin-bottom: 12px;
-}
+// .slider-item {
+//     width: 8px;
+//     height: 2px;
+//     background-color: getColor(text-price-contacts-color);
+//     margin-bottom: 12px;
+// }
 
-.slider-item:last-child {
-    margin-bottom: 0;
-}
+// .slider-item:last-child {
+//     margin-bottom: 0;
+// }
 
-.slider-item.active {
-    width: 100%;
-    background-color: getColor(secondary);
-}
+// .slider-item.active {
+//     width: 100%;
+//     background-color: getColor(secondary);
+// }
 
-.hero-group .uppertitle {
-    margin-bottom: 20px;
-    font-weight: 600;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+// .hero-group .uppertitle {
+//     margin-bottom: 20px;
+//     font-weight: 600;
+//     line-height: 1.36;
+//     letter-spacing: 0.1em;
+//     text-transform: uppercase;
 
-    color: getColor(btn-dis);
-}
+//     color: getColor(btn-dis);
+// }
 
-.hero .item:last-child {
-    margin-right: 0;
-}
+// .hero .item:last-child {
+//     margin-right: 0;
+// }
 
-.hero .link {
-    margin-right: 40px;
-    font-weight: 600;
-    color: var(--primary-text-color);
-}
+// .hero .link {
+//     margin-right: 40px;
+//     font-weight: 600;
+//     color: var(--primary-text-color);
+// }
 
-.hero .link:hover,
-.hero .link:focus {
-    color: getColor(primary);
-}
+// .hero .link:hover,
+// .hero .link:focus {
+//     color: getColor(primary);
+// }
 
-.hero .main-title {
-    margin-bottom: 20px;
+// .hero .main-title {
+//     margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
+//     font-weight: 700;
+//     font-size: 72px;
+//     line-height: 1.18;
+//     letter-spacing: 0.05em;
 
-    color: getColor(secondary);
-}
+//     color: getColor(secondary);
+// }
 
-.hero-group .subtitle {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    color: getColor(text-price-contacts-color);
-}
+// .hero-group .subtitle {
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 1.67;
+//     color: getColor(text-price-contacts-color);
+// }
 
-.hero-socials-container .list {
-    display: flex;
-    font-weight: 600;
-    color: getColor(primary);
-}
+// .hero-socials-container .list {
+//     display: flex;
+//     font-weight: 600;
+//     color: getColor(primary);
+// }

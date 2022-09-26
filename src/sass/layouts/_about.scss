@@ -1,67 +1,102 @@
-.about .list {
-    margin-right: 64px;
-}
+ .about__container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
-.about .item {
-    margin-right: 30px;
-}
+ .about__gallery {
+     display: none;
+     @extend %list;
 
-.about .item:last-child {
-    margin-right: 0;
-}
+     @media screen and (min-width: getSize(tablet)) {
+         display: block;
+         margin-right: 30px;
+     }
 
-.about-group {
-    width: 500px;
-}
+     @media screen and (min-width: getSize(desktop)) {
+         display: flex;
+         margin-right: 64px;
+     }
+ }
 
-.about .uppertitle {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+ .about__item {
+     &:first-child {
+         margin-bottom: 30px;
+     }
 
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
+     @media screen and (min-width: getSize(desktop)) {
+         margin-right: 30px;
 
-.about .uppertitle::before {
-    content: '';
-    margin-right: 20px;
-    display: block;
-    width: 60px;
-    height: 1px;
-    background-color: getColor(uppert);
-}
+         &:first-child {
+             margin-bottom: 0;
+         }
 
-.about .uppertitle:hover,
-.about .uppertitle:focus {
-    color: getColor(accent);
-}
+         &:last-child {
+             margin-right: 0;
+         }
+     }
+ }
 
-.about .uppertitle:hover::before,
-.about .uppertitle:focus::before {
-    background-color: getColor(accent);
-}
+ .about__img {
+     cursor: pointer;
+     transition: transform getProperty(time) getProperty(cubic);
 
-.about .section-title {
-    margin-bottom: 20px;
-    font-family: getFort(accent);
-    font-weight: 700;
-    font-size: 42px;
-    letter-spacing: 0.05em;
-}
+     &:hover,
+     &:focus {
+         transform: scale(1.1);
+     }
+ }
 
-.about .subtitle {
-    margin-bottom: 20px;
+ .about__group {
+     @media screen and (min-width: getSize(tablet)) {
+         max-width: 330px;
+     }
 
-    font-size: 18px;
-    line-height: 1.67;
-    color: getColor(thirth);
-}
+     @media screen and (min-width: getSize(desktop)) {
+         max-width: 500px;
+     }
+ }
 
-.about .description {
-    margin-bottom: 40px;
-    font-size: 14px;
-    line-height: 1.86;
-    color: getColor(thirth);
-}
+ .about__uppertitle {
+     @extend %uppertitle;
+     display: flex;
+     align-items: center;
+ }
+
+
+ .about__uppertitle::before {
+     content: '';
+     margin-right: 20px;
+     display: block;
+     width: 60px;
+     height: 1px;
+     background-color: getColor(uppert);
+ }
+
+
+ .about__title {
+     font-family: getFont(accent);
+     font-weight: 700;
+     @include lh(33, 28, 28px);
+     letter-spacing: 0.05em;
+     margin-bottom: 20px;
+ }
+
+
+ .about__subtitle {
+     @include lh(26, 16, 16px);
+     letter-spacing: 0.02em;
+     color: getColor(thirth);
+     margin-bottom: 20px;
+
+     @media screen and (min-width: getSize(desktop)) {
+         @include lh(30, 18, 18px);
+     }
+ }
+
+ .about__description {
+     @include lh(26, 14, 14px);
+     letter-spacing: 0.02em;
+     color: getColor(thirth);
+     margin-bottom: 40px;
+ }

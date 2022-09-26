@@ -8,7 +8,7 @@ body {
     letter-spacing: 0.02em;
 
     background-color: getColor(primary-bcg);
-    color: getColor(secondary);
+    color: getColor(primary);
 
     @media screen and (min-width: getSize(desktop)) {
         @include lh(30, 18, 18px);

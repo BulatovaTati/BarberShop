@@ -1,67 +1,67 @@
-.team {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: getColor(secondary-bcg)
-}
+// .team {
+//     max-width: 1280px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-color: getColor(secondary-bcg)
+// }
 
-.team .uppertitle {
-    display: inline-flex;
-    align-items: center;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
+// .team .uppertitle {
+//     display: inline-flex;
+//     align-items: center;
+//     font-weight: 600;
+//     letter-spacing: 0.1em;
+//     text-transform: uppercase;
+// }
 
-.team .uppertitle:hover,
-.team .uppertitle:focus {
-    color: getColor(accent);
-}
+// .team .uppertitle:hover,
+// .team .uppertitle:focus {
+//     color: getColor(accent);
+// }
 
-.team .uppertitle:hover::before,
-.team .uppertitle:focus::before {
-    background-color: getColor(accent);
-}
+// .team .uppertitle:hover::before,
+// .team .uppertitle:focus::before {
+//     background-color: getColor(accent);
+// }
 
-.team .uppertitle::before {
-    content: '';
+// .team .uppertitle::before {
+//     content: '';
 
-    margin-right: 20px;
-    width: 60px;
-    height: 1px;
-    background-color: getColor(primary);
-}
+//     margin-right: 20px;
+//     width: 60px;
+//     height: 1px;
+//     background-color: getColor(primary);
+// }
 
-.team .section-title {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
-}
+// .team .section-title {
+//     font-family: 'Raleway';
+//     font-weight: 700;
+//     font-size: 42px;
+//     line-height: 1.16;
+//     letter-spacing: 0.05em;
+// }
 
-.member-title {
-    margin-bottom: 8px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.39;
-    text-align: center;
-}
+// .member-title {
+//     margin-bottom: 8px;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 1.39;
+//     text-align: center;
+// }
 
-.member-item {
-    --items: 3;
-}
+// .member-item {
+//     --items: 3;
+// }
 
-.member-group {
-    outline: 2px solid orange;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+// .member-group {
+//     outline: 2px solid orange;
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+// }
 
-.member-position {
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.36;
-    text-align: center;
-    color: getColor(accent);
-}
+// .member-position {
+//     margin-bottom: 30px;
+//     font-size: 14px;
+//     line-height: 1.36;
+//     text-align: center;
+//     color: getColor(accent);
+// }

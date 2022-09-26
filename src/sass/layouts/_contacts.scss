@@ -1,184 +1,190 @@
-.contacts {
-    max-width: 1280px;
-    height: 644px;
-    margin: 0 auto;
-    background-color: getColor(dark-bcg);
-    background-image: url('../images/contacts-Bg.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top left calc(50% + 325px);
-}
+// .contacts {
+//     @media screen and (min-width: getSize(desktop)) {
+//         max-width: 1280px;
+//         height: 644px;
+//         margin: 0 auto;
+//         background-color: getColor(dark-bcg);
+//         background-image: url('../images/contacts-Bg.jpg');
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         background-position: top left calc(50% + 325px);
+//     }
+// }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
+// .contact-form {
+//     display: flex;
+//     flex-direction: column;
+// }
 
-.contacts-left-side {
-    width: 570px;
-}
+// .contacts-left-side {
+//     @media screen and (min-width: getSize(desktop)) {
+//         width: 570px;
+//     }
+// }
 
-.form__wrapper {
-    margin-bottom: 44px;
-    display: flex;
-    align-items: center;
-}
+// .form__wrapper {
+//     margin-bottom: 44px;
+//     display: flex;
+//     align-items: center;
+// }
 
-.form-group {
-    position: relative;
-}
+// .form-group {
+//     position: relative;
+// }
 
-.form__wrapper .form-group {
-    padding-top: 20px;
-}
+// .form__wrapper .form-group {
+//     padding-top: 20px;
+// }
 
-.form_label {
-    display: block;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+// .form_label {
+//     display: block;
+//     font-weight: 600;
+//     letter-spacing: 0.1em;
+//     text-transform: uppercase;
 
-    color: getColor(cont-form);
-}
+//     color: getColor(cont-form);
+// }
 
-.form__wrapper .form_label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(20px);
-}
+// .form__wrapper .form_label {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     transform: translateY(20px);
+// }
 
-.form-input:focus+.form-label {
-    transform: translateY(0);
-}
+// .form-input:focus+.form-label {
+//     transform: translateY(0);
+// }
 
-.form__wrapper .form-group:not(:last-child) {
-    margin-right: 30px;
-}
+// .form__wrapper .form-group:not(:last-child) {
+//     margin-right: 30px;
+// }
 
-.form-group:focus .form-input {
-    outline: transparent;
-    color: getColor(secondary);
-    width: 270px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid getColor(cont-form);
-}
+// .form-group:focus .form-input {
+//     @media screen and (min-width: getSize(desktop)) {
+//         outline: transparent;
+//         color: getColor(secondary);
+//         width: 270px;
+//         background-color: transparent;
+//         border: none;
+//         border-bottom: 1px solid getColor(cont-form);
+//     }
+// }
 
-.form-input:focus {
-    border-bottom: 1px solid white;
-}
+// .form-input:focus {
+//     border-bottom: 1px solid white;
+// }
 
-.form-input::placeholder {
-    opacity: 0;
-}
+// .form-input::placeholder {
+//     opacity: 0;
+// }
 
-.form-message::placeholder {
-    opacity: 0;
-}
+// .form-message::placeholder {
+//     opacity: 0;
+// }
 
-.form-input:focus::placeholder {
-    opacity: 1;
-}
+// .form-input:focus::placeholder {
+//     opacity: 1;
+// }
 
-.form-message:focus::placeholder {
-    opacity: 1;
-}
+// .form-message:focus::placeholder {
+//     opacity: 1;
+// }
 
-.form-message {
-    outline: transparent;
-    color: getColor(secondary);
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid getColor(cont-form);
-    resize: none;
-}
+// .form-message {
+//     outline: transparent;
+//     color: getColor(secondary);
+//     width: 100%;
+//     background-color: transparent;
+//     border: none;
+//     border-bottom: 1px solid getColor(cont-form);
+//     resize: none;
+// }
 
-.form-message:focus {
-    border-bottom: 1px solid white;
-}
+// .form-message:focus {
+//     border-bottom: 1px solid white;
+// }
 
-.contact-form>.form-group {
-    position: relative;
-    width: 100%;
-    margin-bottom: 44px;
-}
+// .contact-form>.form-group {
+//     position: relative;
+//     width: 100%;
+//     margin-bottom: 44px;
+// }
 
-.form-message:focus+.form-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+// .form-message:focus+.form-label {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
 
-.form-group .contacts-left-side-title {
-    font-family: getFont(accent);
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
+// .form-group .contacts-left-side-title {
+//     font-family: getFont(accent);
+//     font-weight: 700;
+//     font-size: 42px;
+//     line-height: 1.16;
+//     letter-spacing: 0.05em;
 
-    color: getColor(secondary);
-}
+//     color: getColor(secondary);
+// }
 
-.contacts-rigth-side-title {
-    margin-bottom: 40px;
-    font-family: getFont(accent);
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
+// .contacts-rigth-side-title {
+//     margin-bottom: 40px;
+//     font-family: getFont(accent);
+//     font-weight: 700;
+//     font-size: 42px;
+//     line-height: 1.16;
+//     letter-spacing: 0.05em;
 
-    color: getColor(secondary);
-}
+//     color: getColor(secondary);
+// }
 
-.contacts-list {
-    margin-bottom: 70px;
-}
+// .contacts-list {
+//     margin-bottom: 70px;
+// }
 
-.contacts-link {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    line-height: 1.67;
-    color: getColor(text-price-contacts-color);
-}
+// .contacts-link {
+//     display: flex;
+//     align-items: center;
+//     font-size: 18px;
+//     line-height: 1.67;
+//     color: getColor(text-price-contacts-color);
+// }
 
-.contacts-icon {
-    margin-right: 16px;
-}
+// .contacts-icon {
+//     margin-right: 16px;
+// }
 
-.contacts-link:hover,
-.contacts-link:focus {
-    color: getColor(accent);
-}
+// .contacts-link:hover,
+// .contacts-link:focus {
+//     color: getColor(accent);
+// }
 
-.contacts .item:not(:last-child) {
-    margin-bottom: 20px;
-}
+// .contacts .item:not(:last-child) {
+//     margin-bottom: 20px;
+// }
 
-.time {
-    margin-bottom: 20px;
+// .time {
+//     margin-bottom: 20px;
 
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+//     font-weight: 600;
+//     letter-spacing: 0.1em;
+//     text-transform: uppercase;
 
-    color: getColor(secondary);
-}
+//     color: getColor(secondary);
+// }
 
-.time::before {
-    content: '';
-    display: inline-block;
-    margin-right: 20px;
-    width: 60px;
-    height: 1px;
-    background-color: getColor(cont-form);
-}
+// .time::before {
+//     content: '';
+//     display: inline-block;
+//     margin-right: 20px;
+//     width: 60px;
+//     height: 1px;
+//     background-color: getColor(cont-form);
+// }
 
-.time-day {
-    font-size: 18px;
-    line-height: 1.67;
+// .time-day {
+//     font-size: 18px;
+//     line-height: 1.67;
 
-    color: getColor(text-price-contacts-color);
-}
+//     color: getColor(text-price-contacts-color);
+// }

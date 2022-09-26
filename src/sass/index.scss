@@ -9,10 +9,12 @@
 @import './base/resets';
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width: getSize(desktop)) {
+        display: flex;
+        flex-wrap: wrap;
 
-    gap: $indent
+        gap: $indent;
+    }
 }
 
 .grid-item {
@@ -24,8 +26,10 @@ address {
 }
 
 .flex {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: getSize(desktop)) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 @import './components/btns';
