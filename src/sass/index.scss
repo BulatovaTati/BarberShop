@@ -8,18 +8,7 @@
 @import './base/animations';
 @import './base/resets';
 
-.grid {
-    @media screen and (min-width: getSize(desktop)) {
-        display: flex;
-        flex-wrap: wrap;
 
-        gap: $indent;
-    }
-}
-
-.grid-item {
-    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
-}
 
 address {
     font-style: normal;

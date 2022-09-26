@@ -15,17 +15,20 @@
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    background-color: getColor(primary);
+    background-color: getColor(secondary);
+
+    &:hover .socials-icon,
+    &:focus .socials-icon {
+        fill: #ff6c00;
+    }
 }
 
 .socials-icon {
+    transition: fill getProperty(time) getProperty(cubic);
     fill: getColor(primary);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-    fill: getColor(accent);
-}
+
 
 .socials-list {
     margin-left: auto;

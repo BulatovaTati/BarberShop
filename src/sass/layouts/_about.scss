@@ -59,20 +59,8 @@
 
  .about__uppertitle {
      @extend %uppertitle;
-     display: flex;
-     align-items: center;
+
  }
-
-
- .about__uppertitle::before {
-     content: '';
-     margin-right: 20px;
-     display: block;
-     width: 60px;
-     height: 1px;
-     background-color: getColor(uppert);
- }
-
 
  .about__title {
      font-family: getFont(accent);
@@ -85,7 +73,6 @@
 
  .about__subtitle {
      @include lh(26, 16, 16px);
-     letter-spacing: 0.02em;
      color: getColor(thirth);
      margin-bottom: 20px;
 
@@ -96,7 +83,6 @@
 
  .about__description {
      @include lh(26, 14, 14px);
-     letter-spacing: 0.02em;
      color: getColor(thirth);
      margin-bottom: 40px;
  }
