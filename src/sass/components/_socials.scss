@@ -30,23 +30,44 @@
 
 
 
-.socials-list {
+.socials__list {
+    margin-bottom: 21px;
     margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    @include lh(15, 11, 11px);
+
+
+    &::before {
+        content: '';
+        display: block;
+        margin-right: 40px;
+        width: 60px;
+        height: 1px;
+        background-color: getColor(primary)
+    }
+
+    @media screen and (min-width: getSize(tablet)) {
+        margin-bottom: 0;
+    }
 }
 
-.socials-list .item {
+.socials__item {
     margin-right: 40px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.socials-list .item:last-child {
-    margin-right: 0;
-}
+.socials__link {
+    transition: color getProperty(time) getProperty(cubic);
 
-.socials-list::before {
-    content: '';
-    display: block;
-    margin-right: 40px;
-    width: 60px;
-    height: 1px;
-    background-color: getColor(primary)
+    &:hover,
+    &:focus {
+        color: #ff6c00;
+    }
 }
