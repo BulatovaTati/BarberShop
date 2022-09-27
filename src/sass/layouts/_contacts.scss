@@ -11,32 +11,32 @@
 //     }
 // }
 
-// .contact-form {
+// .contact__form {
 //     display: flex;
 //     flex-direction: column;
 // }
 
-// .contacts-left-side {
+// .contacts__left--side {
 //     @media screen and (min-width: getSize(desktop)) {
 //         width: 570px;
 //     }
 // }
 
-// .form__wrapper {
+// .contacts__form--wrapper {
 //     margin-bottom: 44px;
 //     display: flex;
 //     align-items: center;
 // }
 
-// .form-group {
+// .contacts__form--group {
 //     position: relative;
 // }
 
-// .form__wrapper .form-group {
+// .contacts__form--wrapper .contacts__form--group {
 //     padding-top: 20px;
 // }
 
-// .form_label {
+// .contacts__form--label {
 //     display: block;
 //     font-weight: 600;
 //     letter-spacing: 0.1em;
@@ -45,22 +45,22 @@
 //     color: getColor(cont-form);
 // }
 
-// .form__wrapper .form_label {
+// .contacts__form--label {
 //     position: absolute;
 //     top: 0;
 //     left: 0;
 //     transform: translateY(20px);
 // }
 
-// .form-input:focus+.form-label {
+// .contacts__form--input:focus+.form-label {
 //     transform: translateY(0);
 // }
 
-// .form__wrapper .form-group:not(:last-child) {
+// .contacts__form--wrapper .contacts__form--group:not(:last-child) {
 //     margin-right: 30px;
 // }
 
-// .form-group:focus .form-input {
+// .contacts__form--group:focus .contacts__form--input {
 //     @media screen and (min-width: getSize(desktop)) {
 //         outline: transparent;
 //         color: getColor(secondary);
@@ -71,7 +71,7 @@
 //     }
 // }
 
-// .form-input:focus {
+// .contacts__form--input:focus {
 //     border-bottom: 1px solid white;
 // }
 
@@ -79,19 +79,19 @@
 //     opacity: 0;
 // }
 
-// .form-message::placeholder {
+// .contacts__form--message::placeholder {
 //     opacity: 0;
 // }
 
-// .form-input:focus::placeholder {
+// .contacts__form--input:focus::placeholder {
 //     opacity: 1;
 // }
 
-// .form-message:focus::placeholder {
+// .contacts__form--message:focus::placeholder {
 //     opacity: 1;
 // }
 
-// .form-message {
+// .contacts__form--message {
 //     outline: transparent;
 //     color: getColor(secondary);
 //     width: 100%;
@@ -105,19 +105,19 @@
 //     border-bottom: 1px solid white;
 // }
 
-// .contact-form>.form-group {
+// .contact__form>.contacts__form--group {
 //     position: relative;
 //     width: 100%;
 //     margin-bottom: 44px;
 // }
 
-// .form-message:focus+.form-label {
+// .contacts__form--message:focus+.contacts__form--label {
 //     position: absolute;
 //     top: 0;
 //     left: 0;
 // }
 
-// .form-group .contacts-left-side-title {
+// .contacts__left-side--title {
 //     font-family: getFont(accent);
 //     font-weight: 700;
 //     font-size: 42px;
@@ -127,7 +127,7 @@
 //     color: getColor(secondary);
 // }
 
-// .contacts-rigth-side-title {
+// .contacts__rigth-side--title {
 //     margin-bottom: 40px;
 //     font-family: getFont(accent);
 //     font-weight: 700;
@@ -138,11 +138,11 @@
 //     color: getColor(secondary);
 // }
 
-// .contacts-list {
+// .contacts__list {
 //     margin-bottom: 70px;
 // }
 
-// .contacts-link {
+// .contacts__link {
 //     display: flex;
 //     align-items: center;
 //     font-size: 18px;
@@ -150,20 +150,20 @@
 //     color: getColor(text-price-contacts-color);
 // }
 
-// .contacts-icon {
+// .contacts__icon {
 //     margin-right: 16px;
 // }
 
-// .contacts-link:hover,
-// .contacts-link:focus {
+// .contacts__link:hover,
+// .contacts__link:focus {
 //     color: getColor(accent);
 // }
 
-// .contacts .item:not(:last-child) {
+// .contacts__item:not(:last-child) {
 //     margin-bottom: 20px;
 // }
 
-// .time {
+// .contacts__time {
 //     margin-bottom: 20px;
 
 //     font-weight: 600;
@@ -173,7 +173,7 @@
 //     color: getColor(secondary);
 // }
 
-// .time::before {
+// ..contacts__time::before {
 //     content: '';
 //     display: inline-block;
 //     margin-right: 20px;
@@ -182,7 +182,7 @@
 //     background-color: getColor(cont-form);
 // }
 
-// .time-day {
+// .contacts__time--day {
 //     font-size: 18px;
 //     line-height: 1.67;
 
