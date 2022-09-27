@@ -1,120 +1,149 @@
-// .benefits-container {
-//     display: flex;
-//     justify-content: center;
-//     height: 322px;
-// }
+.benefits__container {
+    display: flex;
+    flex-direction: column-reverse;
 
-// .benefits-list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     width: 378px;
-//     margin-right: 130px;
-// }
+    @media screen and (min-width: getSize(desktop)) {
+        justify-content: center;
+        flex-direction: row;
+        min-height: 322px;
+    }
 
-// .benefits-list .item {
-//     padding: 20px 24px;
-//     max-width: 185px;
-//     height: 133px;
-//     text-align: center;
-//     background-color: getColor(secondary);
-// }
+}
 
-// .benefits-amount {
-//     margin-bottom: 6px;
-//     font-weight: 700;
-//     font-size: 42px;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.05em;
-// }
+.benefits__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+    display: flex;
+    position: relative;
 
-// .benefits-amount-decor {
-//     font-weight: 600;
-//     font-size: 16px;
-//     line-height: 1.38;
-//     text-align: center;
+    @media screen and (min-width: getSize(desktop)) {
+        justify-content: right;
+    }
 
-//     color: getColor(accent);
-// }
+    @media screen and (min-width: getSize(desktop)) {
+        width: 378px;
+        margin-right: 130px;
+    }
+}
 
-// .benefits-text {
-//     font-weight: 600;
-//     text-align: center;
-// }
 
-// .benefits-group {
-//     width: 500px;
-// }
+.benefits__item {
+    flex-basis: calc((100% - 60px) / 2);
+    padding: 20px 24px;
+    max-width: 225px;
+    max-height: 133px;
+    text-align: center;
+    margin: 15px;
+    background-color: getColor(secondary-bcg);
 
-// .benefits-group .uppertitle {
-//     display: inline-flex;
-//     align-items: center;
-//     margin-bottom: 20px;
-//     font-weight: 600;
-//     letter-spacing: 0.1em;
-//     text-transform: uppercase;
-// }
 
-// .benefits-group .uppertitle:hover,
-// .benefits-group .uppertitle:focus {
-//     color: getColor(accent);
-// }
+}
 
-// .benefits-group .uppertitle:hover::before,
-// .benefits-group .uppertitle:focus::before {
-//     background-color: getColor(accent);
-// }
+.item-600 {
 
-// .benefits-group .uppertitle::before {
-//     content: '';
-//     margin-right: 20px;
-//     width: 60px;
-//     height: 1px;
+    margin-bottom: 30px;
 
-//     background-color: getColor(primary);
-// }
 
-// .benefits-group .section-title {
-//     margin-bottom: 20px;
-//     font-family: getFont(accent);
-//     font-weight: 700;
-//     font-size: 42px;
-//     letter-spacing: 0.05em;
-// }
+    @media screen and (min-width: getSize(desktop)) {
+        position: absolute;
 
-// .benefits-group .subtitle {
-//     font-size: 18px;
-//     line-height: 1.67;
-//     color: getColor(thirth);
-// }
+    }
 
-// /* new test code  */
-// .benefits-list {
-//     position: relative;
-// }
+}
 
-// .item-600 {
-//     position: absolute;
+.item-20 {
+    margin-top: 40px;
 
-//     /* margin-right: 30px;
-//   margin-bottom: 30px; */
-// }
 
-// .item-20 {
-//     position: absolute;
-//     bottom: 10%;
-//     /* margin-right: 23px; */
-// }
+    @media screen and (min-width: getSize(desktop)) {
+        position: absolute;
+        bottom: 10%;
 
-// .item-50 {
-//     position: absolute;
-//     top: 10%;
-//     left: 55%;
-//     /* margin-bottom: 30px; */
-// }
+    }
+}
 
-// .item-100 {
-//     position: absolute;
-//     bottom: 0;
-//     left: 55%;
-// }
+.item-50 {
+
+    @media screen and (min-width: getSize(desktop)) {
+        position: absolute;
+        top: 10%;
+        left: 55%;
+
+    }
+}
+
+.item-100 {
+    margin-top: 40px;
+
+    @media screen and (min-width: getSize(desktop)) {
+        position: absolute;
+        bottom: 0;
+        left: 55%;
+    }
+}
+
+
+.benefits__amount {
+    font-size: 24px;
+    margin-bottom: 6px;
+    font-weight: 700;
+
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    @media screen and (min-width: 380px) {
+        font-size: 42px;
+    }
+
+}
+
+.benefits__amount-decor {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+
+    color: #ff6c00;
+}
+
+.benefits__text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.benefits__group {
+    max-width: 450px;
+    margin: auto auto 44px;
+
+    @media screen and (min-width: getSize(tablet)) {
+        text-align: left;
+        margin: 0 0 44px;
+    }
+
+    @media screen and (min-width: getSize(desktop)) {
+        max-width: 500px;
+        margin: 0;
+    }
+}
+
+.benefits__uppertitle {
+    @extend %uppertitle;
+}
+
+.benefits__title {
+    @extend %title;
+
+    @media screen and (min-width: getSize(tablet)) {
+        width: 300px;
+    }
+}
+
+.benefits__subtitle {
+    font-size: 18px;
+    line-height: 1.67;
+    color: getColor(thirth);
+}
