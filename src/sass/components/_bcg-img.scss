@@ -1,3 +1,31 @@
+.price {
+    @media screen and (min-width: getSize(desktop)) {
+        background-color: getColor(dark-bcg);
+        background-image: url('../images/desktop/price/img@1x.png');
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/desktop/price/img@2x.png');
+
+        }
+
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url('../images/desktop/price/img@3x.png');
+        }
+    }
+}
+
+
 .contacts {
     background-color: getColor(dark-bcg);
     width: 100%;
