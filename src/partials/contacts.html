@@ -1,21 +1,20 @@
 <section class="contacts section" id="contacts">
-  <div class="container container-contacts">
+  <div class="container contacts__container">
     <div class="contacts__left--side">
-      <h2 class="contacts__left-side--title">Book a Service</h2>
+      <h2 class="contacts__title">Book a Service</h2>
       <form class="contacts__form" name="contact-form" autocomplete="off">
         <div class="contacts__form--wrapper">
           <label class="contacts__form--group">
-            <span class="contacts__form--label">Name*</span>
             <input
               class="contacts__form--input"
               type="name"
               id="user-name"
               name="user-name"
-              placeholder="Татьяна"
+              placeholder="Ivan"
             />
+            <span class="contacts__form--label">Name*</span>
           </label>
           <label class="contacts__form--group">
-            <span class="contacts__form--label">Telephone*</span>
             <input
               class="contacts__form--input"
               type="tel"
@@ -23,25 +22,23 @@
               name="user-phone"
               placeholder="+38 063 000 00 00"
             />
+            <span class="contacts__form--label">Telephone*</span>
           </label>
         </div>
-        <label class="contacts__form--group form-message-group">
+        <label class="contacts__form-message--group">
           <textarea
             class="contacts__form--message"
             name="user-massage"
-            cols="30"
-            rows="10"
+            rows="5"
             placeholder="Your comments"
           ></textarea>
           <span class="contacts__form--label">Message</span>
         </label>
-
         <button class="btn btn-mode-dark" type="submit">send</button>
       </form>
     </div>
-
     <div class="contacts__rigth--side">
-      <h2 class="contacts__rigth--side-title">Contacts</h2>
+      <h2 class="contacts__title">Contacts</h2>
       <ul class="contacts__list">
         <li class="contacts__item item">
           <a
