@@ -8,8 +8,6 @@
     @media screen and (min-width: getSize(desktop)) {
         display: flex;
         justify-content: space-between;
-
-
     }
 }
 
@@ -166,7 +164,6 @@
         padding-top: 100px;
     }
 
-
     @media screen and (min-width: getSize(desktop)) {
         width: 460px;
         padding: 0;
@@ -230,17 +227,4 @@
     line-height: 1.67;
 
     color: getColor(text-price-contacts-color);
-}
-
-.btn-mob {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: getSize(tablet)) {
-        display: inline-block;
-        margin: 0;
-    }
-
 }
