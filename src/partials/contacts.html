@@ -34,47 +34,49 @@
           ></textarea>
           <span class="contacts__form--label">Message</span>
         </label>
-        <button class="btn btn-mode-dark" type="submit">send</button>
+        <button class="btn btn-mode-dark btn-mob" type="submit">send</button>
       </form>
     </div>
     <div class="contacts__rigth--side">
       <h2 class="contacts__title">Contacts</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item item">
-          <a
-            class="contacts__link"
-            href="https://goo.gl/maps/qogRxJkn1skPLJbo9"
-            target="_blank"
-            rel="noopener noreferrer"
+      <div class="contacts__rigth--container">
+        <ul class="contacts__list">
+          <li class="contacts__item item">
+            <a
+              class="contacts__link"
+              href="https://goo.gl/maps/qogRxJkn1skPLJbo9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="contacts__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-map-pin"></use>
+              </svg>
+              Main Street, 7A Kyiv, 08132
+            </a>
+          </li>
+          <li class="contacts__item item">
+            <a class="contacts__link" href="tel:+380441111111">
+              <svg class="contacts__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 044 111 11 11
+            </a>
+          </li>
+          <li class="contacts__item item">
+            <a class="contacts__link" href="mailto:barbershop@email.com">
+              <svg class="contacts__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              barbershop@email.com
+            </a>
+          </li>
+        </ul>
+        <div class="contacts__time--container">
+          <p class="contacts__time">working hours</p>
+          <time class="contacts__time--day"
+            >Daily from 9:00 AM till 22:00 PM</time
           >
-            <svg class="contacts__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-map-pin"></use>
-            </svg>
-            Main Street, 7A Kyiv, 08132
-          </a>
-        </li>
-        <li class="contacts__item item">
-          <a class="contacts__link" href="tel:+380441111111">
-            <svg class="contacts__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-            +38 044 111 11 11
-          </a>
-        </li>
-        <li class="contacts__item item">
-          <a class="contacts__link" href="mailto:barbershop@email.com">
-            <svg class="contacts__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            barbershop@email.com
-          </a>
-        </li>
-      </ul>
-      <div class="contacts__time--container">
-        <p class="contacts__time">working hours</p>
-        <time class="contacts__time--day"
-          >Daily from 9:00 AM till 22:00 PM</time
-        >
+        </div>
       </div>
     </div>
   </div>
