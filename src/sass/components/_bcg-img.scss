@@ -1,0 +1,64 @@
+.contacts {
+    background-color: getColor(dark-bcg);
+    width: 100%;
+
+    background-image: url('../images/mobile/contacts/Bg@1x.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 124% 45%;
+
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url('../images/mobile/contacts/Bg@2x.png');
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        background-image: url('../images/mobile/contacts/Bg@3x.png');
+    }
+
+    @media screen and (min-width: getSize(tablet)) {
+        background-size: 100% 45%;
+        background-image: url('../images/tablet/contacts/Bg@1x.png');
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('../images/tablet/contacts/Bg@2x.png');
+        }
+
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url('../images/tablet/contacts/Bg@3x.png');
+        }
+
+    }
+
+    @media screen and (min-width: getSize(desktop)) {
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 50% 100%, 50% auto;
+        background-position: right top, right center;
+        background-image: url('../images/desktop/contacts/Bg@1x.png');
+
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/desktop/contacts/Bg@2x.png');
+
+        }
+
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url('../images/desktop/contacts/Bg@3x.png');
+        }
+    }
+}
