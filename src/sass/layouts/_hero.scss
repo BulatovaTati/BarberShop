@@ -1,14 +1,17 @@
-// .hero {
-//     @media screen and (min-width: getSize(desktop)) {
-//         height: 680px;
-//         background-image: url('../images/hero-overlay.jpg'),
-//             linear-gradient(to right, #fff 12%, #191c26 12%);
-//         background-size: 1125px 680px, contain;
-//         background-position: top right, center;
-//         background-repeat: no-repeat;
-//         height: 680px;
-//     }
-// }
+.hero {
+    @media screen and (min-width: getSize(desktop)) {
+
+        max-width: 1280px;
+        min-height: 680px;
+        margin: 0 auto;
+        background-color: #191c26;
+        background-image: url('/src/images/desktop/hero/slider/Sliderimg3@1x.png'),
+            linear-gradient(to right, #fff 12%, #191c26 12%);
+        background-size: 1125px 680px, contain;
+        background-position: top right, center;
+        background-repeat: no-repeat;
+    }
+}
 
 // .hero .container {
 //     @media screen and (min-width: getSize(desktop)) {
