@@ -56,7 +56,6 @@
     position: relative;
     padding-top: 20px;
 
-
     @media screen and (min-width: getSize(tablet)) {
         &:not(:last-child) {
             margin-right: 30px;
@@ -188,16 +187,13 @@
     font-size: 18px;
     line-height: 1.67;
     color: getColor(text-price-contacts-color);
+
 }
 
 .contacts__icon {
     margin-right: 16px;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: getColor(accent);
-}
 
 .contacts__item:not(:last-child) {
     margin-bottom: 20px;
@@ -211,16 +207,18 @@
     text-transform: uppercase;
 
     color: getColor(secondary);
+
+    &::before {
+        content: '';
+        display: inline-block;
+        margin-right: 20px;
+        width: 60px;
+        height: 1px;
+        background-color: getColor(cont-form);
+    }
 }
 
-.contacts__time::before {
-    content: '';
-    display: inline-block;
-    margin-right: 20px;
-    width: 60px;
-    height: 1px;
-    background-color: getColor(cont-form);
-}
+
 
 .contacts__time--day {
     font-size: 18px;

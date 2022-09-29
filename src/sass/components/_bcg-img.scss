@@ -1,4 +1,6 @@
 .bcg {
+    background-color: #191c26;
+
     @media screen and (min-width: getSize(desktop)) {
         max-width: 1280px;
         min-height: 680px;
