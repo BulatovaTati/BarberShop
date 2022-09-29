@@ -19,7 +19,7 @@
 
     &:hover .socials-icon,
     &:focus .socials-icon {
-        fill: #ff6c00;
+        fill: getColor(accent);
     }
 }
 
@@ -72,6 +72,6 @@
 
     &:hover,
     &:focus {
-        color: #ff6c00;
+        color: getColor(accent);
     }
 }

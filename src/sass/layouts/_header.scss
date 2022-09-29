@@ -1,111 +1,109 @@
-// .container.header {
+ .header {
+     @media screen and (min-width: getSize(desktop)) {
+         position: fixed;
+         top: 0;
+         width: 100vw;
+         z-index: 10;
+         //  background-color: getColor(header-fix-bcg);
+     }
+ }
 
-//     @media screen and (min-width: getSize(desktop)) {
-//         position: fixed;
-//         top: 0;
-//         width: 100vw;
-//         z-index: 1;
+ .header__container {
+     @media screen and (min-width: getSize(desktop)) {
+         display: flex;
+         align-items: center;
+     }
+ }
 
-//     }
-// }
+ .logo {
+     margin-right: 71px;
+ }
 
-// .header,
-// .hero {
+ .navigation__list {
+     @extend %list;
 
-//     @media screen and (min-width: getSize(desktop)) {
-//         max-width: 1280px;
-//         margin-left: auto;
-//         margin-right: auto;
-//         background-color: getColor(header-fix-bcg);
-//     }
-// }
 
-// .logo {
-//     @media screen and (min-width: getSize(desktop)) {
-//         margin-right: 71px;
-//     }
+     @media screen and (min-width: getSize(desktop)) {
+         display: flex;
+         align-items: center;
+     }
+ }
 
-// }
+ .navigation__item {
+     margin-right: 40px;
 
-// .logo::after {
-//     content: '';
-//     margin-top: 22px;
-//     display: block;
-//     width: 100px;
-//     height: 10px;
-//     background-color: getColor(logo);
-// }
+     &:last-child {
+         margin-right: 0;
+     }
+ }
 
-// .navigation-item {
-//     @media screen and (min-width: getSize(desktop)) {
-//         margin-right: 40px;
-//     }
+ .navigation__link {
+     position: relative;
+     display: block;
 
-// }
+     padding-top: 52px;
+     padding-bottom: 52px;
 
-// .navigation-item:last-child {
-//     margin-right: 0;
-// }
+     font-weight: 600;
 
-// .navigation-link {
-//     @media screen and (min-width: getSize(desktop)) {
-//         position: relative;
+     @include lh(15, 12, 12px);
 
-//     }
+     letter-spacing: 0.1em;
 
-//     color: getColor(secondary);
-// }
+     color: getColor(secondary);
 
-// .navigation-link:hover,
-// .navigation-link:focus {
-//     color: getColor(accent);
-// }
+     @extend %link;
+     transition: color 400ms ease-in-out;
 
-// .navigation-link.current::after {
-//     @media screen and (min-width: getSize(desktop)) {
-//         position: absolute;
-//         content: '';
-//         bottom: 0;
-//         left: 0;
-//         display: block;
-//         width: 100%;
-//         height: 2px;
-//         background-color: getColor(accent);
-//     }
-// }
+     &:hover,
+     &:focus {
+         color: getColor(accent);
+     }
 
-// /* .............................................Контакти................................ */
-// .header-group {
-//     margin-left: auto;
-// }
+     &--current {
+         color: getColor(accent);
 
-// .navigation-link,
-// .header-phone {
-//     font-weight: 600;
-//     font-size: 12px;
-//     line-height: 1.33;
-//     letter-spacing: 0.1em;
+         &::after {
+             position: absolute;
+             bottom: 30px;
+             left: 0;
 
-//     color: getColor(secondary);
+             content: '';
+             display: block;
+             width: 100%;
+             height: 2px;
 
-//     @media screen and (min-width: getSize(desktop)) {
-//         display: block;
+             background-color: getColor(accent);
+         }
+     }
+ }
 
-//         padding-top: 52px;
-//         padding-bottom: 52px;
-//     }
-// }
 
-// .header-phone {
-//     margin-right: 40px;
-//     text-transform: uppercase;
-// }
+ // /* .............................................Контакти................................ */
+ .header__group {
+     display: flex;
+     align-items: center;
+     margin-left: auto;
+ }
 
-// .header-phone:hover,
-// .header-phone:focus {
-//     color: getColor(accent);
-// }
+ .header__phone {
+     display: block;
 
-// .header-btn {
-//     animation: swing 6s ease-in-out infinite forwards;
-// }
+     padding-top: 52px;
+     padding-bottom: 52px;
+     margin-right: 40px;
+
+     font-weight: 600;
+     font-size: 12px;
+
+     line-height: 1.33;
+     letter-spacing: 0.1em;
+
+     color: getColor(secondary);
+     transition: color 400ms ease-in-out;
+
+     &:hover,
+     &:focus {
+         color: getColor(accent);
+     }
+ }

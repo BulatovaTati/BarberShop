@@ -2,7 +2,7 @@ $colors: (
     'primary': #303030,
     'secondary': #ffffff,
     'thirth': #555555,
-    'accent ': #ff6c00,
+    'accent': #ff6c00,
     'uppert': #111319,
 
     'primary-bcg': #ffffff,
@@ -19,6 +19,12 @@ $colors: (
     'btn-dis': rgba(157, 164, 189, 0.6),
     'text-shadow': rgba(171, 129, 108, 0.15),
     'cont-form': rgba(157, 164, 189, 0.4),
+
+
+    // modal
+    'error':#e22f37,
+    'valid':#69e883,
+    'warning':#ffc039,
 
 );
 

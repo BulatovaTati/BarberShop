@@ -44,7 +44,7 @@
     @include lh(19, 14, 14px);
 
     text-align: center;
-    color: #ff6c00;
+    color: getColor(accent);
 }
 
 .member-img {

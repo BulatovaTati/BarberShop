@@ -3,9 +3,8 @@
 
 // import './js/menu';
 import './js/modal';
-import './js/to-top';
+// import './js/to-top';
+import './js/agreement';
 
-// import './js/readmore-prod';
-// import './js/readmore-about';
 // import './js/smooth-scroll';
 // import './js/form';
