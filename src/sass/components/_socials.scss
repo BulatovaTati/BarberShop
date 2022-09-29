@@ -34,12 +34,19 @@
     margin-bottom: 21px;
     margin-left: auto;
 
+    @extend %list;
     display: flex;
     align-items: center;
 
+
+    @media screen and (min-width: getSize(tablet)) {
+        margin-bottom: 0;
+    }
+}
+
+.social-links-list {
     font-weight: 600;
     @include lh(15, 11, 11px);
-
 
     &::before {
         content: '';
@@ -49,14 +56,11 @@
         height: 1px;
         background-color: getColor(primary)
     }
-
-    @media screen and (min-width: getSize(tablet)) {
-        margin-bottom: 0;
-    }
 }
 
 .socials__item {
     margin-right: 40px;
+    padding: 5px;
 
     &:last-child {
         margin-right: 0;

@@ -19,3 +19,27 @@
         transform: rotate(0);
     }
 }
+
+@keyframes fade-left-to-right {
+    from {
+        transform: translateX(-250px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-bottom-to-top {
+    from {
+        transform: translatey(150px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

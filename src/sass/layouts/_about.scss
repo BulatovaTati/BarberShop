@@ -3,7 +3,6 @@
      justify-content: center;
      align-items: center;
 
-
      @media screen and (max-width:(767.98px)) {
          max-width: 418px;
          margin-right: auto;
@@ -70,22 +69,12 @@
  }
 
  .about__title {
-     font-family: getFont(accent);
-     font-weight: 700;
-     @include lh(33, 28, 28px);
-     letter-spacing: 0.05em;
-     margin-bottom: 20px;
+     @extend %title;
  }
 
 
  .about__subtitle {
-     @include lh(26, 16, 16px);
-     color: getColor(thirth);
-     margin-bottom: 20px;
-
-     @media screen and (min-width: getSize(desktop)) {
-         @include lh(30, 18, 18px);
-     }
+     @extend %subtitle;
  }
 
  .about__description {
