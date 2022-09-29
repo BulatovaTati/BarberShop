@@ -1,109 +1,109 @@
- .header {
-     @media screen and (min-width: getSize(desktop)) {
-         position: fixed;
-         top: 0;
-         width: 100vw;
-         z-index: 10;
-         //  background-color: getColor(header-fix-bcg);
-     }
- }
+//  .header {
+//      @media screen and (min-width: getSize(desktop)) {
+//          position: fixed;
+//          top: 0;
+//          width: 100vw;
+//          z-index: 10;
+//          background-color: getColor(header-fix-bcg);
+//      }
+//  }
 
- .header__container {
-     @media screen and (min-width: getSize(desktop)) {
-         display: flex;
-         align-items: center;
-     }
- }
+.header__container {
+    @media screen and (min-width: getSize(desktop)) {
+        display: flex;
+        align-items: center;
+    }
+}
 
- .logo {
-     margin-right: 71px;
- }
+.logo {
+    margin-right: 71px;
+}
 
- .navigation__list {
-     @extend %list;
-
-
-     @media screen and (min-width: getSize(desktop)) {
-         display: flex;
-         align-items: center;
-     }
- }
-
- .navigation__item {
-     margin-right: 40px;
-
-     &:last-child {
-         margin-right: 0;
-     }
- }
-
- .navigation__link {
-     position: relative;
-     display: block;
-
-     padding-top: 52px;
-     padding-bottom: 52px;
-
-     font-weight: 600;
-
-     @include lh(15, 12, 12px);
-
-     letter-spacing: 0.1em;
-
-     color: getColor(secondary);
-
-     @extend %link;
-     transition: color 400ms ease-in-out;
-
-     &:hover,
-     &:focus {
-         color: getColor(accent);
-     }
-
-     &--current {
-         color: getColor(accent);
-
-         &::after {
-             position: absolute;
-             bottom: 30px;
-             left: 0;
-
-             content: '';
-             display: block;
-             width: 100%;
-             height: 2px;
-
-             background-color: getColor(accent);
-         }
-     }
- }
+.navigation__list {
+    @extend %list;
 
 
- // /* .............................................Контакти................................ */
- .header__group {
-     display: flex;
-     align-items: center;
-     margin-left: auto;
- }
+    @media screen and (min-width: getSize(desktop)) {
+        display: flex;
+        align-items: center;
+    }
+}
 
- .header__phone {
-     display: block;
+.navigation__item {
+    margin-right: 40px;
 
-     padding-top: 52px;
-     padding-bottom: 52px;
-     margin-right: 40px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
 
-     font-weight: 600;
-     font-size: 12px;
+.navigation__link {
+    position: relative;
+    display: block;
 
-     line-height: 1.33;
-     letter-spacing: 0.1em;
+    padding-top: 52px;
+    padding-bottom: 52px;
 
-     color: getColor(secondary);
-     transition: color 400ms ease-in-out;
+    font-weight: 600;
 
-     &:hover,
-     &:focus {
-         color: getColor(accent);
-     }
- }
+    @include lh(15, 12, 12px);
+
+    letter-spacing: 0.1em;
+
+    color: getColor(secondary);
+
+    @extend %link;
+    transition: color 400ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: getColor(accent);
+    }
+
+    &--current {
+        color: getColor(accent);
+
+        &::after {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+
+            background-color: getColor(accent);
+        }
+    }
+}
+
+
+// /* .............................................Контакти................................ */
+.header__group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__phone {
+    display: block;
+
+    padding-top: 52px;
+    padding-bottom: 52px;
+    margin-right: 40px;
+
+    font-weight: 600;
+    font-size: 12px;
+
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: getColor(secondary);
+    transition: color 400ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: getColor(accent);
+    }
+}

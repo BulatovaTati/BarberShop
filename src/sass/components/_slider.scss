@@ -1,6 +1,6 @@
 .slider__controls {
     position: absolute;
-    right: 0;
+    right: 60px;
     bottom: 40px;
     @extend %list;
 
@@ -44,7 +44,7 @@
 .slider__pagination {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 60px;
     transform: translateY(-50%);
     flex-direction: column;
     width: 18px;
