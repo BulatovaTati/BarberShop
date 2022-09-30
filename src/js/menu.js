@@ -1,22 +1,22 @@
-(() => {
-  const menuBtns = document.querySelectorAll('[data-menu-button]');
-  const menuBtn = document.querySelector('[data-menu-button]');
-  // button <==
-  const menu = document.querySelector('[data-menu]');
-  menuBtns.forEach(el => el.addEventListener('click', toggleMenu));
+const menuBttns = document.querySelectorAll('[data-menu-button]');
+const mobileMenuRef = document.querySelector('[data-menu]');
+const menuOverlay = document.querySelector('.menu__overlay');
+const menuNav = document.querySelector('.navigation__list');
 
-  function toggleMenu() {
-    document.body.classList.toggle('is-menu-shown');
-    this.classList.toggle('is-open');
-    menu.classList.toggle('is-close');
-  }
+menuBttns.forEach(el => el.addEventListener('click', toggleMenuVisibility));
+menuOverlay.addEventListener('click', toggleMenuVisibility);
+menuNav.addEventListener('click', toggleMenuVisibility);
 
-  menu.addEventListener('click', e => {
-    if (e.target.nodeName !== 'A') return;
-    if (e.target.nodeName === 'A') {
-      document.body.classList.remove('is-menu-shown');
-      menuBtn.classList.remove('is-open');
-      menu.classList.add('is-close');
-    }
-  });
-})();
+function toggleMenuVisibility() {
+  const expanded = document.body.classList.contains('is-menu-shown');
+
+  menuBttns.forEach(el => el.setAttribute('aria-expanded', !expanded));
+  document.body.classList.toggle('is-menu-shown');
+  expanded
+    ? document.body.removeEventListener('keydown', onKeyDown)
+    : document.body.addEventListener('keydown', onKeyDown);
+}
+
+function onKeyDown(event) {
+  event.code === 'Escape' ? toggleMenuVisibility() : null;
+}

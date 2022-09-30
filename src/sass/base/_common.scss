@@ -24,4 +24,15 @@ body {
     &.is-menu-shown {
         overflow: hidden;
     }
+
+
 }
+
+// body.is-menu-shown {
+
+//     & main,
+//     & .about,
+//     & .hero {
+//         filter: blur(5px);
+//     }
+// }

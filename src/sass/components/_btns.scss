@@ -93,6 +93,11 @@
 
 .header__btn {
     animation: swing 6s ease-in-out infinite forwards;
+    color: getColor(primary);
+
+    @media screen and (min-width: getSize(desktop)) {
+        color: getColor(secondary);
+    }
 }
 
 .modal-btn {

@@ -1,4 +1,10 @@
 .hero__container {
+    @media screen and (max-width:(767.98px)) {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @media screen and (min-width: getSize(desktop)) {
         position: relative;
         display: flex;
@@ -6,10 +12,12 @@
 }
 
 .hero__left-side {
-    @media screen and (min-width: getSize(desktop)) {
+
+    display: none;
+
+    @media screen and (min-width: getSize(tablet)) {
         display: flex;
         align-items: flex-end;
-
         width: 100px;
     }
 }
@@ -23,11 +31,16 @@
 }
 
 .hero__group {
-    flex-grow: 1;
+    max-width: 306px;
+    margin-bottom: 183px;
+    margin-top: 123px;
 
-    margin-left: 100px;
-    margin-top: 154px;
-    margin-bottom: 206px;
+    @media screen and (min-width: getSize(desktop)) {
+        flex-grow: 1;
+        margin-left: 100px;
+        margin-top: 154px;
+        margin-bottom: 206px;
+    }
 }
 
 .hero__uppertitle {
@@ -49,6 +62,10 @@
 .hero__subtitle {
     @extend %subtitle;
     color: getColor(text-price-contacts-color);
-    width: 476px;
     animation: fade-bottom-to-top 2s ease;
+
+    @media screen and (min-width: getSize(desktop)) {
+        width: 476px;
+
+    }
 }

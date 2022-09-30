@@ -1,7 +1,7 @@
 // import './js/animation';
 // import './js/swiper';
 
-// import './js/menu';
+import './js/menu';
 import './js/modal';
 // import './js/to-top';
 import './js/agreement';

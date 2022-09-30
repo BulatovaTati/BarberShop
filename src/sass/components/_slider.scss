@@ -1,3 +1,11 @@
+.slider {
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+
+    display: block;
+}
+
 .slider__controls {
     position: absolute;
     right: 60px;

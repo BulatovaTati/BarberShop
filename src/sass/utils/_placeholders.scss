@@ -10,10 +10,13 @@
 %main-title {
     font-family: getFont(accent);
     font-weight: 700;
-    font-size: 48px;
-    @include lh(56, 48, 48px);
+    @include lh(56, 40, 40px);
     letter-spacing: 0.05em;
     color: getColor(secondary);
+
+    @media screen and (min-width: getSize(tablet)) {
+        @include lh(56, 48, 48px);
+    }
 
     @media screen and (min-width: getSize(desktop)) {
         @include lh(85, 72, 72px);
