@@ -49,7 +49,20 @@
             visibility: visible;
         }
     }
+}
 
+.menu__container .hero__list {
+    @media screen and (min-width: getSize(desktop)) {
+        display: none;
+    }
+}
+
+.menu__container {
+    @media screen and (min-width: getSize(desktop)) {
+        display: flex;
+        align-items: baseline;
+        flex-grow: 1;
+    }
 
 }
 

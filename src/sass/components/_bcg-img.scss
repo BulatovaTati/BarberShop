@@ -2,7 +2,7 @@
 
     min-height: 580px;
     width: 100%;
-    background-color: getColor(dark-bcg);
+
     background-image: url('../images/mobile/hero/slider/Sliderimg3@1x.png');
 
     background-size: 100% 100%;
@@ -24,6 +24,33 @@
     (min-resolution: 3dppx) {
         background-image: url('../images/mobile/hero/slider/Sliderimg3@3x.png');
 
+    }
+
+    @media screen and (min-width: getSize(tablet)) {
+
+        max-width: 768px;
+        max-height: 680px;
+        margin: 0 auto;
+
+        background-image: url('../images/tablet/hero/slider/Sliderimg3@1x.png');
+
+        background-size: 610px 680px, cover;
+        background-position: top right, center;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/tablet/hero/slider/Sliderimg3@2x.png');
+
+        }
+
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url('../images/tablet/hero/slider/Sliderimg3@3x.png');
+        }
     }
 
     @media screen and (min-width: getSize(desktop)) {

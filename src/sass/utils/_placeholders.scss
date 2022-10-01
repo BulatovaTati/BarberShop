@@ -13,6 +13,7 @@
     @include lh(56, 40, 40px);
     letter-spacing: 0.05em;
     color: getColor(secondary);
+    margin-bottom: 20px;
 
     @media screen and (min-width: getSize(tablet)) {
         @include lh(56, 48, 48px);

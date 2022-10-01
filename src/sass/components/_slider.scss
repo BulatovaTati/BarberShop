@@ -7,13 +7,19 @@
 }
 
 .slider__controls {
-    position: absolute;
-    right: 60px;
-    bottom: 40px;
     @extend %list;
 
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: getSize(tablet)) {
+        position: absolute;
+        bottom: 40px;
+        right: 36px;
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: getSize(desktop)) {
+        right: 60px;
+    }
 }
 
 .slider__item-controls {
@@ -50,13 +56,21 @@
 }
 
 .slider__pagination {
-    position: absolute;
-    top: 50%;
-    right: 60px;
-    transform: translateY(-50%);
-    flex-direction: column;
-    width: 18px;
     @extend %list;
+
+    @media screen and (min-width: getSize(tablet)) {
+        position: absolute;
+        top: 50%;
+        right: 36px;
+        transform: translateY(-50%);
+        flex-direction: column;
+        width: 18px;
+
+    }
+
+    @media screen and (min-width: getSize(desktop)) {
+        right: 60px;
+    }
 }
 
 .slider__item {

@@ -1,26 +1,38 @@
  .header__container {
-     @media screen and (max-width:(767.98px)) {
-         max-width: 418px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 20px;
+
+     @media screen and (max-width: 767.98px) {
+         max-width: 480px;
          margin-right: auto;
          margin-left: auto;
-         justify-content: space-between;
-         align-items: center;
-         padding: 20px 10px;
-         display: flex;
      }
 
      @media screen and (min-width: getSize(desktop)) {
-         display: flex;
-         align-items: center;
+         justify-content: start;
+         padding-top: 0;
      }
  }
 
  .logo {
-     margin-right: 71px;
      fill: getColor(secondary);
+     margin: 0;
+     display: block;
+     transition: fill getProperty(time) getProperty(cubic);
 
      @media screen and (min-width: getSize(tablet)) {
          fill: getColor(primary);
+
+     }
+
+     @media screen and (min-width: getSize(desktop)) {
+         margin-right: 71px;
+
+         &:hover {
+             fill: getColor(accent);
+         }
      }
  }
 
@@ -63,8 +75,8 @@
 
      @media screen and (min-width: getSize(desktop)) {
          @include lh(15, 12, 12px);
-         padding-top: 52px;
-         padding-bottom: 52px;
+         padding-top: 25px;
+         padding-bottom: 25px;
          color: getColor(secondary);
      }
 

@@ -5,14 +5,14 @@
         margin-right: auto;
     }
 
-    @media screen and (min-width: getSize(desktop)) {
+
+    @media screen and (min-width: getSize(tablet)) {
         position: relative;
         display: flex;
     }
 }
 
 .hero__left-side {
-
     display: none;
 
     @media screen and (min-width: getSize(tablet)) {
@@ -34,6 +34,14 @@
     max-width: 306px;
     margin-bottom: 183px;
     margin-top: 123px;
+
+    @media screen and (min-width: getSize(tablet)) {
+        max-width: 339px;
+        margin-top: 154px;
+        margin-bottom: 228px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
     @media screen and (min-width: getSize(desktop)) {
         flex-grow: 1;
