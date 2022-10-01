@@ -33,6 +33,10 @@
     }
 }
 
+.member__list {
+    @extend %list;
+}
+
 .member__group {
     padding-top: 30px;
     padding-bottom: 30px;

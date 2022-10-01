@@ -1,15 +1,16 @@
-.socials {
+.socials__list--icons {
+    @extend %list;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.socials-item:not(:last-child) {
+.socials__item--icons:not(:last-child) {
     margin-right: 10px;
 }
 
-.socials-link {
+.socials__link--icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,18 +19,16 @@
     height: 44px;
     background-color: getColor(secondary);
 
-    &:hover .socials-icon,
-    &:focus .socials-icon {
+    &:hover .socials__icon,
+    &:focus .socials__icon {
         fill: getColor(accent);
     }
 }
 
-.socials-icon {
+.socials__icon {
     transition: fill getProperty(time) getProperty(cubic);
     fill: getColor(primary);
 }
-
-
 
 .socials__list {
     margin-bottom: 21px;
@@ -39,15 +38,12 @@
     display: flex;
     align-items: center;
 
+    font-weight: 600;
+    @include lh(15, 11, 11px);
 
     @media screen and (min-width: getSize(tablet)) {
         margin-bottom: 0;
     }
-}
-
-.social-links-list {
-    font-weight: 600;
-    @include lh(15, 11, 11px);
 
     &::before {
         content: '';
@@ -58,6 +54,7 @@
         background-color: getColor(primary)
     }
 }
+
 
 .socials__item {
     margin-right: 40px;

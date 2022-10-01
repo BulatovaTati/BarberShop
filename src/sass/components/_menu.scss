@@ -6,7 +6,7 @@
     height: 100vh;
 
     pointer-events: none;
-    z-index: 50;
+    z-index: 10;
 
     background-color: getColor(header-fix-bcg);
     opacity: 0;
@@ -28,7 +28,7 @@
 .menu__container {
     @media screen and (max-width: getSize(wdesktop)) {
         position: absolute;
-        z-index: 100;
+        z-index: 20;
         top: 0;
         right: 0;
         display: flex;
@@ -52,12 +52,6 @@
             transform: translateX(0);
             visibility: visible;
         }
-    }
-}
-
-.header--socials {
-    @media screen and (min-width: getSize(desktop)) {
-        display: none;
     }
 }
 

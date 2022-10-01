@@ -11,6 +11,8 @@
 }
 
 .benefits__list {
+    @extend %list;
+
     flex-wrap: wrap;
     justify-content: center;
     margin: -15px;

@@ -23,15 +23,3 @@ img {
 a {
     @extend %link;
 }
-
-.link,
-.socials-link {
-    text-decoration: none;
-    color: currentColor;
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
