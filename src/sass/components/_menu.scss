@@ -19,6 +19,10 @@
 
         transform: translateX(0);
     }
+
+    @media screen and (min-width: getSize(desktop)) {
+        display: none;
+    }
 }
 
 .menu__container {
@@ -51,7 +55,7 @@
     }
 }
 
-.menu__container .hero__list {
+.header--socials {
     @media screen and (min-width: getSize(desktop)) {
         display: none;
     }

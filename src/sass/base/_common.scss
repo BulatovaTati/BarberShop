@@ -28,11 +28,7 @@ body {
 
 }
 
-// body.is-menu-shown {
-
-//     & main,
-//     & .about,
-//     & .hero {
-//         filter: blur(5px);
-//     }
-// }
+.js-transparent {
+    opacity: 0;
+    pointer-events: none;
+}
