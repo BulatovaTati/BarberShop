@@ -1,19 +1,18 @@
-const buttonToTop = document.querySelector('.scroll-to-top');
-
-buttonToTop.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+const toTopButton = document.querySelector('.scroll-to-top');
 
 window.onscroll = () => changeScrollButtonVisibility();
 
+toTopButton.addEventListener('click', () =>
+  document.getElementById('header').scrollIntoView()
+);
+
 function changeScrollButtonVisibility() {
-  const button = document.querySelector('.scroll-to-top');
-  const offsetTrigger = 60;
+  const offsetTrigger = 80;
   const pageOffset = window.pageYOffset;
 
   if (pageOffset > offsetTrigger) {
-    button.classList.remove('js-transparent');
+    toTopButton.classList.remove('js-transparent');
   } else {
-    button.classList.add('js-transparent');
+    toTopButton.classList.add('js-transparent');
   }
 }
