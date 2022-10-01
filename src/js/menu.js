@@ -25,12 +25,3 @@ function toggleMenuVisibility() {
 function onKeyDown(event) {
   event.code === 'Escape' ? toggleMenuVisibility() : null;
 }
-
-const expanded = document.body.classList.contains('is-menu-shown');
-
-const expandedmod = document.body.classList.contains('is-modal-shown');
-
-if (expanded === true && expanded === true) {
-  console.log('dd');
-  document.body.classList.remove('is-menu-shown');
-}

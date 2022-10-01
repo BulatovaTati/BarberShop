@@ -17,6 +17,10 @@
       ? document.body.removeEventListener('keydown', onKeyDown)
       : document.body.addEventListener('keydown', onKeyDown);
     isShown = !isShown;
+
+    if (isShown) {
+      document.body.classList.remove('is-menu-shown');
+    }
   }
 
   function onBackdropClick(event) {
