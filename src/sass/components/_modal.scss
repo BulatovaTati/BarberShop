@@ -75,12 +75,43 @@
     border: 1px solid #191c26;
     outline: transparent;
 
-    &:invalid:not(:placeholder-shown) {
-        border-color: getColor(error);
+    &:hover,
+    &:focus {
+
+        border: 1px solid getColor(accent);
     }
 
-    &:valid:not(:placeholder-shown) {
-        border-color: getColor(valid);
+    // &:invalid:not(:placeholder-shown) {
+    //     border-color: getColor(error);
+    // }
+
+    // &:valid:not(:placeholder-shown) {
+    //     border-color: getColor(valid);
+    // }
+}
+
+
+.alert {
+    position: absolute;
+    bottom: -22px;
+    left: 10px;
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    letter-spacing: -0.6em;
+    opacity: 0;
+    transition: getProperty(time) getProperty(cubic) 100ms;
+
+    &--error {
+        color: getColor(error);
+    }
+
+    &--warning {
+        color: getColor(warning);
     }
 }
 
@@ -103,57 +134,14 @@
     transform: scale(1);
 }
 
-.modal-form__icon {
-    position: absolute;
-    bottom: 12px;
-    left: 10px;
-
-    fill: getColor(primary);
-    transition: fill getProperty(time) ease-in-out;
-
-    .modal-form__input:focus~& {
-        fill: getColor(warning);
-    }
-
-    .modal-form__input:valid:not(:placeholder-shown)~& {
-        fill: getColor(valid);
-    }
-
-    .modal-form__input:invalid:not(:placeholder-shown)~& {
-        fill: getColor(error);
-    }
-}
-
-.alert {
-    position: absolute;
-    bottom: -22px;
-    left: 10px;
-
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 10px;
-    letter-spacing: -0.6em;
-    opacity: 0;
-    transition: getProperty(time) ease-out 100ms;
-
-    &--error {
-        color: getColor(error);
-    }
-
-    &--warning {
-        color: getColor(warning);
-    }
-}
-
 .alert-icon {
     position: absolute;
     right: 10px;
     bottom: 12px;
+
     display: inline-flex;
     fill: currentColor;
+
     opacity: 0;
     transform: scale(0.3);
 
@@ -168,6 +156,48 @@
         fill: getColor(error);
     }
 }
+
+.modal-form__icon {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+
+    fill: getColor(primary);
+    transition: transform getProperty(time) getProperty(cubic),
+        fill getProperty(time) getProperty(cubic),
+        border-color getProperty(time) getProperty(cubic);
+
+
+
+    .modal-form__input:hover~& {
+        fill: getColor(accent);
+    }
+
+    .modal-form__input:focus~& {
+        fill: getColor(warning);
+    }
+}
+
+.modal-form__input:valid:not(:placeholder-shown)~.modal-form__icon {
+    fill: getColor(valid);
+}
+
+.modal-form__input:invalid:not(:placeholder-shown)~.modal-form__icon {
+    fill: getColor(error);
+}
+
+.modal-form__input:invalid:not(:placeholder-shown) {
+
+    border-color: getColor(error);
+}
+
+.modal-form__input:valid:not(:placeholder-shown) {
+
+    border-color: getColor(valid);
+}
+
+// ..............
+
 
 .modal-form__policy-group {
     display: flex;
