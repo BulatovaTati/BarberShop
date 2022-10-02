@@ -3,4 +3,4 @@ import './js/modal';
 import './js/to-top';
 import './js/agreement';
 
-// import './js/form';
+import './js/form';
