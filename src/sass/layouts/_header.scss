@@ -146,6 +146,7 @@
 
  .header--socials {
      margin-bottom: 40px;
+     margin-left: 0;
 
      @media screen and (min-width: getSize(desktop)) {
          display: none;
