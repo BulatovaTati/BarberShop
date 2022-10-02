@@ -1,8 +1,4 @@
-/* Стили для подложки */
-
 .overlay {
-
-    /* Скрываем подложку  */
     opacity: 0;
     visibility: hidden;
 
@@ -17,30 +13,20 @@
     transition: .3s all;
 }
 
-
-/* Стили для модальных окон */
-
 .modal {
-
-    /* Скрываем окна  */
     opacity: 0;
     visibility: hidden;
 
-
-    /*  Установаем ширину окна  */
     width: 100%;
     max-width: 500px;
     max-height: 99vh;
 
-    /*  Центрируем и задаем z-index */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    /* Должен быть выше чем у подложки*/
 
-    /*  Побочные стили   */
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
 
     padding: 30px;
@@ -50,9 +36,6 @@
 
     overflow-y: auto;
 }
-
-
-/* Стили для активных классов подложки и окна */
 
 .modal.active,
 .overlay.active {
@@ -103,24 +86,22 @@
     padding: 12px 40px;
 
     border-radius: 5px;
-    border: 1px solid #191c26;
+    border: 1px solid getColor(uppert);
     outline: transparent;
 
     &:hover,
     &:focus {
-
         border: 1px solid getColor(accent);
     }
 
-    // &:invalid:not(:placeholder-shown) {
-    //     border-color: getColor(error);
-    // }
+    &:invalid:not(:placeholder-shown) {
+        border-color: getColor(error);
+    }
 
-    // &:valid:not(:placeholder-shown) {
-    //     border-color: getColor(valid);
-    // }
+    &:valid:not(:placeholder-shown) {
+        border-color: getColor(valid);
+    }
 }
-
 
 .alert {
     position: absolute;
@@ -216,16 +197,6 @@
 .modal-form__input:invalid:not(:placeholder-shown)~.modal-form__icon {
     fill: getColor(error);
 }
-
-.modal-form__input:invalid:not(:placeholder-shown) {
-    border-color: getColor(error);
-}
-
-.modal-form__input:valid:not(:placeholder-shown) {
-    border-color: getColor(valid);
-}
-
-// ..............
 
 
 .modal-form__policy-group {

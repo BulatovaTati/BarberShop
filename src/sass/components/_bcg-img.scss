@@ -1,5 +1,4 @@
 .bcg {
-
     min-height: 580px;
     width: 100%;
 
@@ -15,19 +14,15 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: url('../images/mobile/hero/slider/Sliderimg3@2x.png');
-
-
     }
 
     @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
         background-image: url('../images/mobile/hero/slider/Sliderimg3@3x.png');
-
     }
 
     @media screen and (min-width: getSize(tablet)) {
-
         max-width: 768px;
         max-height: 680px;
         margin: 0 auto;
@@ -43,7 +38,6 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url('../images/tablet/hero/slider/Sliderimg3@2x.png');
-
         }
 
         @media (min-device-pixel-ratio: 3),
@@ -69,7 +63,6 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url('../images/desktop/hero/slider/Sliderimg3@2x.png');
-
         }
 
         @media (min-device-pixel-ratio: 3),
@@ -87,8 +80,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -111,7 +102,6 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
 
 
         @media (min-device-pixel-ratio: 2),
@@ -137,14 +127,11 @@
         background-position: center;
         background-size: cover;
 
-
-
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url('../images/desktop/price/img@2x.png');
-
         }
 
         @media (min-device-pixel-ratio: 3),
@@ -197,9 +184,9 @@
     }
 
     @media screen and (min-width: getSize(desktop)) {
-
         background-size: contain;
         background-repeat: no-repeat;
+
         background-size: 50% 100%, 50% auto;
         background-position: right top, right center;
         background-image: url('../images/desktop/contacts/Bg@1x.png');

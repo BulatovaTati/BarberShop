@@ -3,7 +3,6 @@
     padding-bottom: 44px;
     background-color: getColor(secondary-bcg);
 
-
     @media screen and (min-width: getSize(tablet)) {
         padding-top: 56px;
         padding-bottom: 56px;
@@ -18,9 +17,7 @@
     @media screen and (min-width: getSize(tablet)) {
         flex-direction: row;
         align-items: center;
-
     }
-
 }
 
 .footer__copyright {

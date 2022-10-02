@@ -7,7 +7,6 @@
         flex-direction: row;
         min-height: 322px;
     }
-
 }
 
 .benefits__list {
@@ -54,12 +53,10 @@
         margin: 0;
         left: 0;
     }
-
 }
 
 .item-20 {
     margin-top: 40px;
-
 
     @media screen and (min-width: getSize(desktop)) {
         position: absolute;
