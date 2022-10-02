@@ -20,9 +20,14 @@ body {
 
 body {
 
-    &.is-modal-shown,
+
     &.is-menu-shown {
         overflow: hidden;
     }
 
+}
+
+body.modal-open,
+body.is-open {
+    overflow: hidden;
 }
