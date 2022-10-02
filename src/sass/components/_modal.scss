@@ -187,12 +187,10 @@
 }
 
 .modal-form__input:invalid:not(:placeholder-shown) {
-
     border-color: getColor(error);
 }
 
 .modal-form__input:valid:not(:placeholder-shown) {
-
     border-color: getColor(valid);
 }
 
